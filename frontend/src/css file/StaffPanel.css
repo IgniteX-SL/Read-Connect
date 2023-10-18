@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.divStaffPanel{
+    height: 675px;
+    width: 100%;
+    display: flex;
+}
+
+.divStaffPanelleft{
+    width: 65%;
+    padding-top: 100px;
+    background-color: white;
+}
+
+.divStaffPanelRight{
+    width: 35%;
+    padding-top: 65px;
+    background-color: #0077b6;
+}
+
+.PanelRow{
+    height: 198px;
+    width: 97%;
+    display: flex;
+    padding-left: 40px;
+}
+
+#row1{
+    margin-top: 90px;
+}
+
+.panelItem{
+    width: 200px;
+    margin: 25px 0 0 0;
+    cursor: pointer;
+}
+
+.panelItem img{
+    width: 125px;
+    height: 125px;
+    box-shadow: 0px 2px 4px rgba(14, 1, 1, 0.2);
+    border-radius: 75px;
+}
+
+.panelItem img:hover{
+    width: 127px;
+    height: 127px;
+    opacity: 0.7;
+}
+
+.divStaffPanelRight h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+figcaption{
+    color: #03045e;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+#staffPanelNurse{
+    width: 200px;
+    margin: 25px 0 0 75px;
+    cursor: pointer;
+}
+
+#stafficon{
+    margin-left: 80px;
+}
+
+.accordion-body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.accordion-header{
+    font-family: 'Merriweather', serif;
+}
+
+.accordion-item{
+    margin: 5px;
+}
+
