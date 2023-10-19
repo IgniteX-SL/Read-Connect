@@ -1,63 +1,42 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const BookReturnSchema=new Schema({
-    firstName:{
+    returnID:{
         type:String,
         required:true
     },
-    lastName:{
+    memberID:{
         type:String,
         required:true
     },
-    doctorID:{
+    memberName:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
-    phoneNumber:{
+    bookID:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
+    bookName:{
         type:String,
-        required:false
+        required:true
     },
-    medicalLicenseNo:{
+    borrowalID:{
         type:String,
-        required:false
+        required:true
     },
-    specialization:{
+    dateOfReturned:{
+        type:Date,
+        required:true
+    },
+    returnStaffID:{
         type:String,
-        required:false
+        required:true
     },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
+    damageID:{
         type:String,
         required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
-    }
+    }    
 })
 const BookReturn=mongoose.model("BookReturn",BookReturnSchema);
 module.exports=BookReturn;

@@ -1,63 +1,14 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const NoteSchema=new Schema({
-    firstName:{
+    bookID:{
         type:String,
         required:true
     },
-    lastName:{
+    note:{
         type:String,
         required:true
-    },
-    doctorID:{
-        type:String,
-        required:true,
-        unique:true
-    },
-    phoneNumber:{
-        type:String,
-        required:false
-    },
-    email:{
-        type:String,
-        required:false
-    },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
-    }
+    }    
 })
 const Note=mongoose.model("Note",NoteSchema);
 module.exports=Note;

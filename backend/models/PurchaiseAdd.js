@@ -1,62 +1,25 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const PurchaiseAddSchema=new Schema({
-    firstName:{
+    bookID:{
         type:String,
         required:true
     },
-    lastName:{
+    bookName:{
         type:String,
         required:true
     },
-    doctorID:{
-        type:String,
-        required:true,
-        unique:true
+    purchaiseAddDate:{
+        type:Date,
+        required:true
     },
-    phoneNumber:{
+    purchaiseAddStaffID:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
-        type:String,
-        required:false
-    },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
+    price:{
+        type:Number,
+        required:true
     }
 })
 const PurchaiseAdd=mongoose.model("PurchaiseAdd",PurchaiseAddSchema);

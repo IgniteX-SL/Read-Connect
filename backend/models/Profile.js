@@ -1,63 +1,26 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const ProfileSchema=new Schema({
-    firstName:{
+    name:{
         type:String,
         required:true
     },
-    lastName:{
+    role:{
         type:String,
         required:true
     },
-    doctorID:{
+    profilePicture:{
         type:String,
-        required:true,
-        unique:true
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
     },
     phoneNumber:{
         type:String,
         required:false
-    },
-    email:{
-        type:String,
-        required:false
-    },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
-    }
+    }    
 })
 const Profile=mongoose.model("Profile",ProfileSchema);
 module.exports=Profile;

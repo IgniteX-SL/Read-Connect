@@ -1,36 +1,36 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const MemberSchema=new Schema({
-    firstName:{
+    name:{
         type:String,
         required:true
     },
-    lastName:{
-        type:String,
-        required:true
-    },
-    doctorID:{
+    registrationNumber:{
         type:String,
         required:true,
         unique:true
+    },
+    NIC:{
+        type:String,
+        required:true
+    },
+    grade:{
+        type:String,
+        required:false
+    },
+    class:{
+        type:String,
+        required:false
     },
     phoneNumber:{
         type:String,
         required:false
     },
-    email:{
+    age:{
         type:String,
         required:false
     },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
+    whatsappNumber:{
         type:String,
         required:false
     },
@@ -38,26 +38,22 @@ const MemberSchema=new Schema({
         type:String,
         required:false
     },
-    avalibleDays:{
+    password:{
         type:String,
+        required:true
+    },
+    confirmPassword:{
+        type:String,
+        required:true
+    },
+    createdDate:{
+        type:Date,
         required:false
     },
-    emergencyContactNumber:{
-        type:String,
+    isActiveUser:{
+        type:Boolean,
         required:false
     },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
-    }
 })
 const Member=mongoose.model("Member",MemberSchema);
 module.exports=Member;
