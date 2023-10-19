@@ -1,63 +1,51 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const EBookSchema=new Schema({
-    firstName:{
+    bookName:{
         type:String,
         required:true
     },
-    lastName:{
+    bookID:{
         type:String,
         required:true
     },
-    doctorID:{
-        type:String,
-        required:true,
-        unique:true
+    bookObject:{
+        type:object,
+        required:true
     },
-    phoneNumber:{
+    authorName:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
-        type:String,
-        required:false
-    },
-    medicalLicenseNo:{
+    additionalContributors:{
         type:String,
         required:false
     },
-    specialization:{
+    genresAndCategories:{
         type:String,
-        required:false
+        required:true
     },
-    professionalExperience:{
+    tagsAndKeywords:{
         type:String,
-        required:false
+        required:true
     },
-    address:{
+    language:{
         type:String,
-        required:false
+        required:true
     },
-    avalibleDays:{
+    edition:{
         type:String,
-        required:false
+        required:true
     },
-    emergencyContactNumber:{
+    dateOfEntry:{
         type:String,
-        required:false
+        required:true
     },
-    gender:{
+    approvedByStaff:{
         type:String,
-        required:false
+        required:true
     },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
-    }
+
 })
 const EBook=mongoose.model("EBook",EBookSchema);
 module.exports=EBook;

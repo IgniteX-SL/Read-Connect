@@ -1,62 +1,37 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const BookBorrowalSchema=new Schema({
-    firstName:{
+    memberID:{
         type:String,
         required:true
     },
-    lastName:{
+    memberName:{
         type:String,
         required:true
     },
-    doctorID:{
+    bookID:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
-    phoneNumber:{
+    bookName:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
+    dateOfBorrowal:{
         type:String,
-        required:false
+        required:true
     },
-    medicalLicenseNo:{
+    dateOfReturnToBe:{
         type:String,
-        required:false
+        required:true
     },
-    specialization:{
+    borrowalStaffID:{
         type:String,
-        required:false
+        required:true
     },
-    professionalExperience:{
+    returnID:{
         type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
+        required:true
     }
 })
 const BookBorrowal=mongoose.model("BookBorrowal",BookBorrowalSchema);

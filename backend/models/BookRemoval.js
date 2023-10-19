@@ -1,63 +1,31 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const BookRemovalSchema=new Schema({
-    firstName:{
+    bookID:{
         type:String,
         required:true
     },
-    lastName:{
+    bookName:{
         type:String,
         required:true
     },
-    doctorID:{
+    removalStaffID:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
-    phoneNumber:{
+    removalDate:{
+        type:Date,
+        required:true
+    },
+    removalReason:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
-        type:String,
-        required:false
-    },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
+    price:{
+        type:Number,
+        required:true
     }
+    
 })
 const BookRemoval=mongoose.model("BookRemoval",BookRemovalSchema);
 module.exports=BookRemoval;
