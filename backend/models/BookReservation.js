@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
-const NurseSchema=new Schema({
+const BookReservationSchema=new Schema({
     firstName:{
         type:String,
         required:true
@@ -9,7 +9,7 @@ const NurseSchema=new Schema({
         type:String,
         required:true
     },
-    nurseID:{
+    doctorID:{
         type:String,
         required:true,
         unique:true
@@ -22,7 +22,7 @@ const NurseSchema=new Schema({
         type:String,
         required:false
     },
-    nursingLicenseNo:{
+    medicalLicenseNo:{
         type:String,
         required:false
     },
@@ -42,7 +42,7 @@ const NurseSchema=new Schema({
         type:String,
         required:false
     },
-    emergencyContactNumbers:{
+    emergencyContactNumber:{
         type:String,
         required:false
     },
@@ -59,5 +59,5 @@ const NurseSchema=new Schema({
         required:false
     }
 })
-const Nurse=mongoose.model("Nurse",NurseSchema);
-module.exports=Nurse;
+const BookReservation=mongoose.model("BookReservation",BookReservationSchema);
+module.exports=BookReservation;
