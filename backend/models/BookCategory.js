@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
-const StaffSchema=new Schema({
+const BookCategorySchema=new Schema({
     firstName:{
         type:String,
         required:true
@@ -9,9 +9,10 @@ const StaffSchema=new Schema({
         type:String,
         required:true
     },
-    employeeID:{
+    doctorID:{
         type:String,
-        required:false
+        required:true,
+        unique:true
     },
     phoneNumber:{
         type:String,
@@ -21,7 +22,15 @@ const StaffSchema=new Schema({
         type:String,
         required:false
     },
-    jobRole:{
+    medicalLicenseNo:{
+        type:String,
+        required:false
+    },
+    specialization:{
+        type:String,
+        required:false
+    },
+    professionalExperience:{
         type:String,
         required:false
     },
@@ -29,10 +38,9 @@ const StaffSchema=new Schema({
         type:String,
         required:false
     },
-    staffID:{
+    avalibleDays:{
         type:String,
-        required:true,
-        unique:true
+        required:false
     },
     emergencyContactNumber:{
         type:String,
@@ -46,10 +54,10 @@ const StaffSchema=new Schema({
         type:String,
         required:false
     },
-    skills:{
+    skillsAndTraining:{
         type:Object,
         required:false
     }
 })
-const Staff=mongoose.model("Staff",StaffSchema);
-module.exports=Staff;
+const BookCategory=mongoose.model("BookCategory",BookCategorySchema);
+module.exports=BookCategory;

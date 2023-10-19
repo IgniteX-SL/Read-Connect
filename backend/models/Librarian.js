@@ -1,84 +1,63 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
-const PatientSchema=new Schema({
-    fullName:{
+const LibrarianSchema=new Schema({
+    firstName:{
         type:String,
         required:true
     },
-    gender:{
+    lastName:{
         type:String,
         required:true
     },
-    dateOfBirth:{
-        type:Date,
-        required:false
-    },
-    nationality:{
-        type:String,
-        required:false
-    },
-    nicNumber:{
+    doctorID:{
         type:String,
         required:true,
         unique:true
+    },
+    phoneNumber:{
+        type:String,
+        required:false
     },
     email:{
         type:String,
         required:false
     },
-    results:{
+    medicalLicenseNo:{
         type:String,
         required:false
     },
-    allergies:{
+    specialization:{
         type:String,
         required:false
     },
-    medicalsBeingTaken:{
+    professionalExperience:{
         type:String,
         required:false
     },
-    existingMedicalCondition:{
+    address:{
         type:String,
         required:false
     },
-    symptoms:{
+    avalibleDays:{
         type:String,
         required:false
     },
-    dateOfArrival:{
-        type:Date,
-        required:false
-    },
-    contryOfDeparture:{
+    emergencyContactNumber:{
         type:String,
         required:false
     },
-    anyTransitPoint:{
+    gender:{
         type:String,
         required:false
     },
-    flightOrTransportDetails:{
+    relationship:{
         type:String,
         required:false
     },
-    dateOfCheckIn:{
-        type:Date,
-        required:false
-    },
-    assignedRoomNo:{
-        type:String,
-        required:false
-    },
-    durationOfStay:{
-        type:String,
-        required:false
-    },
-    anySpecificRequirements:{
-        type:String,
+    skillsAndTraining:{
+        type:Object,
         required:false
     }
-
 })
-const Patient=mongoose.model("Patient",PatientSchema);
-module.exports=Patient;
+const Librarian=mongoose.model("Librarian",LibrarianSchema);
+module.exports=Librarian;
