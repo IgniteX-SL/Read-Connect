@@ -1,62 +1,33 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const BookDonationtSchema=new Schema({
-    firstName:{
+    bookID:{
         type:String,
         required:true
     },
-    lastName:{
+    bookName:{
         type:String,
         required:true
     },
-    doctorID:{
+    donatorName:{
         type:String,
         required:true,
-        unique:true
     },
-    phoneNumber:{
+    BookDonationDate:{
+        type:Date,
+        required:true
+    },
+    donatorEmail:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
+    donationStaffID:{
         type:String,
-        required:false
+        required:true
     },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
+    price:{
+        type:Number,
+        required:true
     }
 })
 const BookDonation=mongoose.model("BookDonation",BookDonationtSchema);

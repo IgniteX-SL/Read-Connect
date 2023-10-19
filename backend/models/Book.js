@@ -1,61 +1,117 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const BookSchema=new Schema({
-    firstName:{
+    ISBN:{
         type:String,
         required:true
     },
-    lastName:{
+    genresAndCategories:{
         type:String,
         required:true
     },
-    doctorID:{
+    tagsAndKeywords:{
+        type:String,
+        required:true
+    },
+    language:{
+        type:String,
+        required:true
+    },
+    edition:{
+        type:String,
+        required:true
+    },
+    accessionNo:{ //parigrahana ankaya
+        type:String,
+        required:true
+    },
+    dateOfEntry:{
+        type:String,
+        required:true
+    },
+    authorName:{
         type:String,
         required:true,
         unique:true
     },
-    phoneNumber:{
+    additionalContributors:{
         type:String,
         required:false
     },
-    email:{
+    bookName:{
         type:String,
         required:false
     },
-    medicalLicenseNo:{
+    publisherName:{
         type:String,
         required:false
     },
-    specialization:{
+    publish:{
         type:String,
         required:false
     },
-    professionalExperience:{
+    publishedYear:{
         type:String,
         required:false
     },
-    address:{
+    price:{
         type:String,
         required:false
     },
-    avalibleDays:{
+    noOfPages:{
         type:String,
         required:false
     },
-    emergencyContactNumber:{
+    supplyID:{ //khmd hambune kiyala -> replacement, donation, government grants, purchaising
         type:String,
         required:false
     },
-    gender:{
+    donationID:{
         type:String,
         required:false
     },
-    relationship:{
+    replacementID:{
         type:String,
         required:false
     },
-    skillsAndTraining:{
+    governmentGrantsID:{
+        type:String,
+        required:false
+    },
+    purchasingID:{
+        type:String,
+        required:false
+    },
+    removalID : {
+        type:Boolean,
+        required:false
+    },
+    noteID:{
+        type:String,
+        required:false
+    },
+    borrowalID:{
+        type:String,
+        required:false
+    },
+    cupboardNo:{
+        type:String,
+        required:false
+    },
+    rowNumber:{
         type:Object,
+        required:false
+    },
+    condition:{
+        type:String,
+        required:false
+    },
+    damageID:{
+        type:String,
+        required:false
+    },
+    reservationID:{
+        type:String,
         required:false
     }
 })

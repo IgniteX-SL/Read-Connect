@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
-const BookCategorySchema=new Schema({
+const NoteSchema=new Schema({
     firstName:{
         type:String,
         required:true
@@ -59,5 +59,5 @@ const BookCategorySchema=new Schema({
         required:false
     }
 })
-const BookCategory=mongoose.model("BookCategory",BookCategorySchema);
-module.exports=BookCategory;
+const Note=mongoose.model("Note",NoteSchema);
+module.exports=Note;

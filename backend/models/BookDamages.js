@@ -1,62 +1,29 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const BookDamagesSchema=new Schema({
-    firstName:{
+    bookID:{
         type:String,
         required:true
     },
-    lastName:{
+    bookName:{
         type:String,
         required:true
     },
-    doctorID:{
+    damageReportDate:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
-    phoneNumber:{
+    damageReportStaffID:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
+    damageMemberID:{
         type:String,
-        required:false
+        required:true
     },
-    medicalLicenseNo:{
+    damageMemberName:{
         type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
-        type:String,
-        required:false
-    },
-    address:{
-        type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
+        required:true
     }
 })
 const BookDamages=mongoose.model("BookDamages",BookDamagesSchema);
