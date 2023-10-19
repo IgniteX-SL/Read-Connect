@@ -24,7 +24,11 @@ const BookDamagesSchema=new Schema({
     damageMemberName:{
         type:String,
         required:true
-    }
+    },
+    damageID:{
+        type:String,
+        required:true
+    },
 })
 const BookDamages=mongoose.model("BookDamages",BookDamagesSchema);
 module.exports=BookDamages;

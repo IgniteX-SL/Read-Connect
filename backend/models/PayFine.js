@@ -1,62 +1,41 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const PayFineSchema=new Schema({
-    firstName:{
+    bookID:{
         type:String,
         required:true
     },
-    lastName:{
+    bookName:{
         type:String,
         required:true
     },
-    doctorID:{
+    memberID:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
-    phoneNumber:{
+    memberName:{
         type:String,
-        required:false
+        required:true
     },
-    email:{
+    fineAmount:{
         type:String,
-        required:false
+        required:true
     },
-    medicalLicenseNo:{
+    paidAmount:{
         type:String,
-        required:false
+        required:true
     },
-    specialization:{
+    paidDate:{
         type:String,
-        required:false
+        required:true
     },
-    professionalExperience:{
+    dueDate:{
         type:String,
-        required:false
+        required:true
     },
-    address:{
+    fineStatus:{
         type:String,
-        required:false
-    },
-    avalibleDays:{
-        type:String,
-        required:false
-    },
-    emergencyContactNumber:{
-        type:String,
-        required:false
-    },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
-        type:Object,
-        required:false
+        required:true
     }
 })
 const PayFine=mongoose.model("PayFine",PayFineSchema);

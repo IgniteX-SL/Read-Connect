@@ -1,15 +1,15 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const LibrarianSchema=new Schema({
-    firstName:{
+    name:{
         type:String,
         required:true
     },
-    lastName:{
+    NIC:{
         type:String,
         required:true
     },
-    doctorID:{
+    email:{
         type:String,
         required:true,
         unique:true
@@ -18,19 +18,11 @@ const LibrarianSchema=new Schema({
         type:String,
         required:false
     },
-    email:{
+    age:{
         type:String,
         required:false
     },
-    medicalLicenseNo:{
-        type:String,
-        required:false
-    },
-    specialization:{
-        type:String,
-        required:false
-    },
-    professionalExperience:{
+    whatsappNumber:{
         type:String,
         required:false
     },
@@ -38,26 +30,26 @@ const LibrarianSchema=new Schema({
         type:String,
         required:false
     },
-    avalibleDays:{
+    password:{
         type:String,
-        required:false
+        required:true
     },
-    emergencyContactNumber:{
+    confirmPassword:{
         type:String,
-        required:false
+        required:true
     },
-    gender:{
-        type:String,
-        required:false
-    },
-    relationship:{
-        type:String,
-        required:false
-    },
-    skillsAndTraining:{
+    profilePicture:{
         type:Object,
         required:false
-    }
+    },
+    assignedDate:{
+        type:Date,
+        required:false
+    },
+    isActiveUser:{
+        type:Boolean,
+        required:false
+    },
 })
 const Librarian=mongoose.model("Librarian",LibrarianSchema);
 module.exports=Librarian;
