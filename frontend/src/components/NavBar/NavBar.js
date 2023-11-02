@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './media/logo.png';
 import { Link } from 'react-router-dom';
 import './css/NavBar.css';
-import { useLogout } from '../hooks/useLogout';
-import { useAuthContext } from '../hooks/useAuthContext';
-import BackButton from './BackButton';
+import { useLogout } from '../../hooks/useLogout';
+import { useAuthContext } from '../../hooks/useAuthContext';
+import BackButton from '../BackButton';
 
 function NavBar() {
   const { logout } = useLogout();
