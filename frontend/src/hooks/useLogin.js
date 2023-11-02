@@ -22,14 +22,14 @@ export const useLogin = () => {
         localStorage.setItem('user', JSON.stringify(response.data));
         dispatch({ type: 'LOGIN', payload: response.data });
         setIsLoading(false);
-        if (role === 'admin') {
-          navigate('/adminpanel');
-        } else if (role === 'staff') {
-          navigate('/staffpanel');
-        } else if (role === 'kitchen') {
-          navigate('/meals');
-        } else if (role === 'pharmacy') {
-          navigate('/pharmacy');
+        if (role === 'librarian') {
+          navigate('/librarianPanel');
+        } else if (role === 'libraryStaff') {
+          navigate('/libraryStaffPanel');
+        } else if (role === 'member') {
+          navigate('/memberPanel');
+        } else if (role === 'admin') {
+          navigate('/adminPanel');
         }
       } else {
         setIsLoading(false);

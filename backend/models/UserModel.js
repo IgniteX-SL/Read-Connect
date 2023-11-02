@@ -16,7 +16,7 @@ const userSchema = new Schema({
     role:{
         type:String,
         required:true,
-        enum: ['admin', 'staff', 'kitchen', 'pharmacy'],
+        enum: ['admin', 'librarian', 'libraryStaff', 'member'],
     }
 });    
 

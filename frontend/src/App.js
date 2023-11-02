@@ -18,10 +18,6 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/changePassword" element={<ChangePassword />} />
-          <Route path="/addPackages" element={<AddPackages />} />
-          <Route path="/addServices" element={<AddServices />}/>
-          <Route path="/packageFetch" element={<PackageFetch />} />
-          <Route path="/serviceFetch" element={<ServiceFetch />} />
         </Routes>
 
       </Router>
