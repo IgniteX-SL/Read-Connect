@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../css file/login.css';
-import NavBar from '../../components/NavBar';
+import NavBar from '../../components/NavBar/NavBar';
 import LoginProfile from '../../img/loginprofile.png';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useLogin } from '../../hooks/useLogin';

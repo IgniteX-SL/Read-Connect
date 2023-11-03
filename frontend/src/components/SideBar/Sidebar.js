@@ -1,5 +1,5 @@
 import React from 'react';
-import './sidebar.css';
+import './sideBar.css';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 

@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './media/logo.png';
 import { Link } from 'react-router-dom';
-import './css/NavBar.css';
+import '../NavBar/NavBar.css';
 import { useLogout } from '../../hooks/useLogout';
 import { useAuthContext } from '../../hooks/useAuthContext';
-import BackButton from '../BackButton';
+
 
 function NavBar() {
   const { logout } = useLogout();
@@ -38,9 +37,8 @@ function NavBar() {
     <div className="div-nav-bar">
       <div className="navBarLeft">
         <Link to="/" className="logo-link">
-          <img className="img-logo" src={logo} alt="site logo" />
+          {/* <img className="img-logo" src={logo} alt="site logo" /> */}
         </Link>
-        <BackButton />
         <div id="homeImgContainer">
           <Link to="/" className="link">
             <img className="homeIcon" src="https://vectorified.com/images/home-icon-white-2.png" alt="" />
