@@ -1,9 +1,9 @@
 import React from 'react'
 import '../../css file/changepassword.css';
-import NavBar from '../../components/NavBar';
+import NavBar from '../../components/NavBar/NavBar';
 import ChangePageImage from '../../img/changepasswordpage.png';
 import LoginProfile from '../../img/loginprofile.png';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useChangePassword } from '../../hooks/useChangePassword';

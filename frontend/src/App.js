@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './pages/UserAuthenticationFrontend/loginProfile';
 import Signup from './pages/UserAuthenticationFrontend/SignUpProfile';
 import ChangePassword from './pages/UserAuthenticationFrontend/changePassword';
-import PackageFetch from './pages/Packages/packageFetch';
-import AddServices from './pages/Services/ServicesAdd';
+import SideBar from './components/SideBar/Sidebar';
+import Table from './components/Table/Table';
 
 
 function App() {
@@ -14,10 +14,13 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home_page />} />
+          {/* <Route path="/" element={<Home_page />} /> */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/sidebar" element={<SideBar />} />
+          <Route path="/table" element={<Table />} />
+          
         </Routes>
 
       </Router>
