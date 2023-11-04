@@ -10,7 +10,7 @@ const EBookSchema=new Schema({
         required:true
     },
     bookObject:{
-        type:object,
+        type:Object,
         required:true
     },
     authorName:{
