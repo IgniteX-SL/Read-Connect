@@ -8,6 +8,7 @@ function Welcome(){
             <div className="welcomeText">
                 <h5>Welcome Padma Perera</h5>
             </div>
+            <hr></hr>
         </div>
     );
 }
