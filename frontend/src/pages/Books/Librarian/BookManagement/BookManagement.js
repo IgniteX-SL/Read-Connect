@@ -11,7 +11,7 @@ function BookManagement() {
             <div className="rightContainor">
                 <Welcome />
                 <div className="bookManagementtileContainor">
-                    <h5><b>Book Management</b></h5>
+                    <h6><b>Book Management</b></h6>
                     <div className="bookManagementTileRow">
                         <div className="bookManagementTile">
                             <div className="textContainor">Borrow Books</div>
