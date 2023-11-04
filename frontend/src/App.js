@@ -7,20 +7,19 @@ import Signup from './pages/UserAuthenticationFrontend/SignUpProfile';
 import ChangePassword from './pages/UserAuthenticationFrontend/changePassword';
 import SideBar from './components/SideBar/Sidebar';
 import Table from './components/Table/Table';
-
+import Home from './pages/Static/Home/Home';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Home_page />} /> */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/sidebar" element={<SideBar />} />
           <Route path="/table" element={<Table />} />
-          
+          <Route path="/" element={<Home />} />
         </Routes>
 
       </Router>
