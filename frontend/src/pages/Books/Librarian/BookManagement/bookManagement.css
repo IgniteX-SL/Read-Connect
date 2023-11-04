@@ -22,11 +22,10 @@
     height: 89%;
     padding-left: 50px;
     padding-top: 5px;
-    background-color: #778da9;
+    background-color: #dad7cd;
 }
 .bookManagementtileContainor h5{
-    margin-bottom: 15px;
-    color: white;
+    color: black;
 }
 .bookManagementTileRow{
     display: flex;
@@ -50,16 +49,19 @@
     text-align: center;
     width: 70%;
     height: 75%;
-    background: linear-gradient(to bottom, #5f0f40, #5f0f40);
+    background: linear-gradient(to bottom, #3a5a40, #588157);
     border-radius: 20px;
     color: white;
     transition: all 0.3s ease-in-out;
     font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .textContainor:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 72%;
+    height: 77%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     font-size: 15px;
     text-decoration: none;
-    color: yellow;
+    color: #dad7cd;
     cursor: pointer;
 }
