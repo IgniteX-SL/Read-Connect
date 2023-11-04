@@ -25,29 +25,10 @@ connection.once("open",()=>{
     console.log("MongoDB Connection Success!");
 })
 
-
-// const patientRouter=require("./routes/patientRoutes.js");
-// app.use("/patient",patientRouter);
-// const doctorRouter=require("./routes/doctorRoutes.js");
-// app.use("/doctor",doctorRouter);
-// const nurseRouter=require("./routes/nurseRoutes.js");
-// app.use("/nurse",nurseRouter);
-// const staffRouter=require("./routes/staffRoutes.js");
-// app.use("/staff",staffRouter);
-// const equipmentRouter=require("./routes/equipmentRoutes.js");
-// app.use("/equipment",equipmentRouter);
-// const mealRouter=require("./routes/mealRoutes.js");
-// app.use("/meal",mealRouter);
-// const notificationRouter=require("./routes/notificationRoutes.js");
-// app.use("/notification",notificationRouter);
-// const packagesRouter=require("./routes/packageRoutes.js");
-// app.use("/package",packagesRouter);
-// const paymentRouter=require("./routes/paymentRoutes.js");
-// app.use("/payment",paymentRouter);
-// const serviceRouter=require("./routes/serviceRoutes.js");
-// app.use("/service",serviceRouter);
-// const pharmacyRouter=require("./routes/pharmacyRoutes.js");
-// app.use("/pharmacy",pharmacyRouter);
+const bookBorrowalRouter=require("./routes/bookBorrowalRoutes.js");
+app.use("/bookBorrowal",bookBorrowalRouter);
+const bookRoutes=require("./routes/bookRoutes.js");
+app.use("/book",bookRoutes);
 
 const userRoutes=require("./routes/user.js");
 app.use("/user",userRoutes);

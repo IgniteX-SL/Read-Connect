@@ -17,6 +17,14 @@ const PayFineSchema=new Schema({
         type:String,
         required:true
     },
+    borrowalID:{
+        type:String,
+        required:true
+    },
+    returnID:{
+        type:String,
+        required:true
+    },
     fineAmount:{
         type:String,
         required:true

@@ -18,7 +18,7 @@ const MemberSchema=new Schema({
         type:String,
         required:false
     },
-    class:{
+    classRoom:{
         type:String,
         required:false
     },
