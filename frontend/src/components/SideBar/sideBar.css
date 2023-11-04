@@ -8,7 +8,7 @@
   
   .sidebar {
     width: 245px;
-    background-color: #5f0f40;
+    background-color: #344e41;
     padding-top: 35px;
     position: fixed;
     height: 100vh;
@@ -88,12 +88,12 @@
     transition: all 0.2s ease-in-out;
   }
   .sidebar-menu li a.nav-link:hover {
-    color: yellow;
+    color: #dad7cd;
   }
   
   .sidebar-menu li a.nav-link:hover .icon {
     transform: scale(1.08);
-    color: yellow;
+    color: #dad7cd;
   }
   
   .rounded-circle {
