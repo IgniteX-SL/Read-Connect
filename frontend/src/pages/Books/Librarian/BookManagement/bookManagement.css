@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bookManagementContainor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.leftContainor{
+    width: 16%;
+    height: 100vh;  
+}
+.rightContainor{
+    width: 84%;
+    height: 100vh;
+}
+.bookManagementtileContainor{
+    width: 100%;
+    height: 89%;
+    padding: 50px;
+}
+.bookManagementtileContainor h5{
+    margin-bottom: 40px;
+}
+.bookManagementTileRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.bookManagementTile{
+    width:22%;
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textContainor{
+    padding-top: 55px;
+    text-align: center;
+    width: 70%;
+    height: 75%;
+    background: linear-gradient(to bottom, #1b263b, #415a77);
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+.textContainor:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    text-decoration: none;
+    color: yellow;
+}
