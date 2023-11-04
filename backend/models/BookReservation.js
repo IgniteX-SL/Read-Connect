@@ -5,7 +5,15 @@ const BookReservationSchema=new Schema({
         type:String,
         required:true
     },
+    memberName:{
+        type:String,
+        required:true
+    },
     bookID:{
+        type:String,
+        required:true
+    },
+    bookName:{
         type:String,
         required:true
     },
