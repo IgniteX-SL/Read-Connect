@@ -1,4 +1,4 @@
-const BookReturn = require("../models/BookReturn");
+const BookReturn = require("../models/ReturnBook");
 
 const addBookReturn = async (req, res) => {
     const {
