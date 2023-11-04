@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.welcomeHeader{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.welcomeText{
+    padding: 23px;
+}

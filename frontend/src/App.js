@@ -8,6 +8,7 @@ import ChangePassword from './pages/UserAuthenticationFrontend/changePassword';
 import SideBar from './components/SideBar/Sidebar';
 import Table from './components/Table/Table';
 import Home from './pages/Static/Home/Home';
+import BookManagement from './pages/Books/Librarian/BookManagement/BookManagement';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/sidebar" element={<SideBar />} />
           <Route path="/table" element={<Table />} />
           <Route path="/" element={<Home />} />
+          <Route path="/bookManagement" element={<BookManagement />} />
         </Routes>
 
       </Router>
