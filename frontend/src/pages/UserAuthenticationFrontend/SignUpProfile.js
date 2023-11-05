@@ -21,7 +21,6 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log(email, password, role);
     await signup({ email, password, role });
     clearForm();
   }
@@ -62,10 +61,10 @@ export default function Signup() {
                     <Form.Label>Role</Form.Label>
                     <Form.Select value={role} id='roleInput' onChange={(e) => setRole(e.target.value)}>
                       <option value="" disabled>Select a Role</option>
-                      <option value="staff">staff</option>
-                      <option value="admin">admin</option>
-                      <option value="kitchen">kitchen Staff</option>
-                      <option value="pharmacy">pharmacy</option>
+                      <option value="librarian">Librarian</option>
+                      <option value="libraryStaff">Library Staff</option>
+                      <option value="admin">Admin</option>
+                      <option value="member">Member</option>
                     </Form.Select>
                   </Form.Group>
                 </div>
