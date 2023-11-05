@@ -48,7 +48,7 @@ function BookManagement() {
                             <div className="textContainor">Book Reservation</div>
                         </div>
                         <div className="bookManagementTile">
-
+                            <div className="textContainor">Stock Taking</div>
                         </div>
                         <div className="bookManagementTile">
 

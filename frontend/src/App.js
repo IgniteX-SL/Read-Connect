@@ -9,7 +9,8 @@ import SideBar from './components/SideBar/Sidebar';
 import Table from './components/Table/Table';
 import Home from './pages/Static/Home/Home';
 import BookManagement from './pages/Books/Librarian/BookManagement/BookManagement';
-
+import BookBorrow from './pages/Books/Librarian/BookBorrow/bookBorrow';
+import BookReturn from './pages/Books/Librarian/BookReturn/bookReturn';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,8 @@ function App() {
           <Route path="/table" element={<Table />} />
           <Route path="/" element={<Home />} />
           <Route path="/bookManagement" element={<BookManagement />} />
+          <Route path="/bookBorrow" element={<BookBorrow />} />
+          <Route path="/bookReturn" element={<BookReturn />} />
         </Routes>
 
       </Router>
