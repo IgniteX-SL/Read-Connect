@@ -20,7 +20,7 @@ const PurchaiseAddSchema=new Schema({
     price:{
         type:Number,
         required:true
-    }
+    },
 })
 const PurchaiseAdd=mongoose.model("PurchaiseAdd",PurchaiseAddSchema);
 module.exports=PurchaiseAdd;

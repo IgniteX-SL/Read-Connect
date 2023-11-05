@@ -2,33 +2,34 @@
     margin: 0;
     padding: 0;
 }
-.bookBorrowContainor{
+.bookReservationContainor{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 120vh;
     background-color: #dad7cd;
 }
-.leftContainor{
+.leftReservationContainor{
     width: 16%;
     height: 120vh;  
 }
-.rightContainor{
+.rightReservationContainor{
     width: 84%;
     height: 120vh;
     background-color: #dad7cd;
 }
-.bookBorrowRightContainor{
+.bookReservationRightContainor{
     width: 100%;
-    height: 110%;
+    height: 89%;
     padding-left: 50px;
     padding-top: 5px;
     background-color: #dad7cd;
 }
-.bookBorrowRightContainor h6{
+.bookReservationRightContainor h6{
     color: black;
 }
-.divFormContainor{
+.divReservationBookFormContainor{
     width: 100%;
     background-color: #dad7cd;
     display: flex;

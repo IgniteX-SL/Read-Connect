@@ -1,7 +1,7 @@
 import React from "react";
 import "./bookManagement.css";
-import SideBar from "../../../../components/SideBar/Sidebar";
-import Welcome from "../../../../components/Welcome/Welcome";
+import SideBar from "../../../components/SideBar/Sidebar";
+import Welcome from "../../../components/Welcome/Welcome";
 import { Link } from "react-router-dom";
 function BookManagement() {
     return (
@@ -21,7 +21,7 @@ function BookManagement() {
                             <div className="textContainor"><Link to="/bookReturn" className="link">Return Books</Link></div>
                         </div>
                         <div className="bookManagementTile">
-                            <div className="textContainor"><Link to="/bookPurchaise" className="link">Book Purchaising</Link></div>
+                            <div className="textContainor"><Link to="/bookPurchaiseAdd" className="link">Book Purchaising</Link></div>
                         </div>
                         <div className="bookManagementTile">
                             <div className="textContainor"><Link to="/bookGovernmentGrants" className="link">Government Grants</Link></div>
@@ -38,7 +38,7 @@ function BookManagement() {
                             <div className="textContainor"><Link to="/bookDonation" className="link">Book Donation</Link></div>
                         </div>
                         <div className="bookManagementTile">
-                            <div className="textContainor"><Link to="/bookAdd" className="link">Add Books</Link></div>
+                            <div className="textContainor"><Link to="/booksAdd" className="link">Add Books</Link></div>
                         </div>
                     </div>
                     <div className="bookManagementTileRow">
