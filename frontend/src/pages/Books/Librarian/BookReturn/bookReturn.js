@@ -1,4 +1,4 @@
-import "./bookBorrow.css";
+import "./bookReturn.css";
 import SideBar from "../../../../components/SideBar/Sidebar";
 import Welcome from "../../../../components/Welcome/Welcome";
 import Button from 'react-bootstrap/Button';
@@ -12,12 +12,14 @@ import Swal from 'sweetalert2';
 
 
 function BookReturn() {
+    const [returnID, setReturnID] = useState("");
     const [memberID, setMemberID] = useState("");
     const [memberName, setMemberName] = useState("");
     const [bookID, setBookID] = useState("");
     const [bookName, setBookName] = useState("");
-    const [dateOfBorrowal, setDateOfBorrowal] = useState("");
+    const [damageID, setDamageID] = useState("");
     const [dateOfReturnToBe, setDateOfReturnToBe] = useState("");
+    const [borrowalID, setBorrowalID] = useState("");
     const [borrowalStaffID, setBorrowalStaffID] = useState("");
 
     const [searchResult, setSearchResult] = useState(null);
@@ -41,34 +43,36 @@ function BookReturn() {
                         <div className="divFormContainor">
                             <Form>
                                 <Row className="mb-3">
+                                    <Form.Label>Return ID</Form.Label>
+                                    <Form.Control id='returnIDInput' onChange={(e) => setReturnID(e.target.value)} value={returnID} />
+                                </Row>
+                                <Row className="mb-3">
                                     <Form.Label>Member ID</Form.Label>
                                     <Form.Control id='memberIDInput' onChange={(e) => setMemberID(e.target.value)} value={memberID} />
                                 </Row>
                                 <Row className="mb-3">
                                     <Form.Label>Member Name</Form.Label>
-                                    <Form.Control id='memberIDInput' onChange={(e) => setMemberName(e.target.value)} value={memberName} />
+                                    <Form.Control id='memberNameInput' onChange={(e) => setMemberName(e.target.value)} value={memberName} />
                                 </Row>
                                 <Row className="mb-3">
                                     <Form.Label>Book ID</Form.Label>
-                                    <Form.Control id='memberIDInput' onChange={(e) => setBookID(e.target.value)} value={bookID} />
+                                    <Form.Control id='bookIDInput' onChange={(e) => setBookID(e.target.value)} value={bookID} />
                                 </Row>
                                 <Row className="mb-3">
                                     <Form.Label>Book Name</Form.Label>
-                                    <Form.Control id='memberIDInput' onChange={(e) => setBookName(e.target.value)} value={bookName} />
+                                    <Form.Control id='bookNameInput' onChange={(e) => setBookName(e.target.value)} value={bookName} />
+                                </Row>
+                                <Row className="mb-3">
+                                    <Form.Label>Borrowal ID</Form.Label>
+                                    <Form.Control id='borrowalIDInput' onChange={(e) => setBorrowalID(e.target.value)} value={borrowalID} />
+                                </Row>
+                                <Row className="mb-3">
+                                    <Form.Label>Damage ID</Form.Label>
+                                    <Form.Control id='damageIDInput' onChange={(e) => setDamageID(e.target.value)} value={damageID} />
                                 </Row>
                                 <Row className="mb-3" id="dateContainor">
                                     <Col>
-                                        <Form.Label>Date of Borrowal</Form.Label>
-                                        <Form.Control
-                                            type="date"
-                                            name="arrivaldate"
-                                            id='dateOfArrivalInput'
-                                            value={dateOfBorrowal}
-                                            onChange={(e) => setDateOfBorrowal(e.target.value)}
-                                        />
-                                    </Col>
-                                    <Col>
-                                        <Form.Label>Date of Return To Be</Form.Label>
+                                        <Form.Label>Date of Return</Form.Label>
                                         <Form.Control
                                             type="date"
                                             name="arrivaldate"
