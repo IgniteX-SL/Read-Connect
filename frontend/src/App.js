@@ -19,7 +19,6 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/changePassword" element={<ChangePassword />} />
-          <Route path="/sidebar" element={<SideBar />} />
           <Route path="/table" element={<Table />} />
           <Route path="/" element={<Home />} />
           <Route path="/bookManagement" element={<BookManagement />} />
