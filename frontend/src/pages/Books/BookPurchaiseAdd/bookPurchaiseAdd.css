@@ -2,34 +2,34 @@
     margin: 0;
     padding: 0;
 }
-.bookBorrowContainor{
+.bookPurchaiseContainor{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-color: #dad7cd;
 }
-.leftContainor{
+.leftPurchaiseContainor{
     width: 16%;
-    height: 120vh;  
+    height: 100vh;  
 }
-.rightContainor{
+.rightPurchaiseContainor{
     width: 84%;
-    height: 120vh;
+    height: 100vh;
     background-color: #dad7cd;
 }
-.bookBorrowRightContainor{
+.bookPurchaiseRightContainor{
     width: 100%;
     height: 89%;
     padding-left: 50px;
     padding-top: 5px;
     background-color: #dad7cd;
 }
-.bookBorrowRightContainor h6{
+.bookPurchaiseRightContainor h6{
     color: black;
 }
-.divFormContainor{
+.divPuchaiseFormContainor{
     width: 100%;
     background-color: #dad7cd;
     display: flex;

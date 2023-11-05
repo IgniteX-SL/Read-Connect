@@ -1,6 +1,6 @@
 import "./bookBorrow.css";
-import SideBar from "../../../../components/SideBar/Sidebar";
-import Welcome from "../../../../components/Welcome/Welcome";
+import SideBar from "../../../components/SideBar/Sidebar";
+import Welcome from "../../../components/Welcome/Welcome";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -30,15 +30,15 @@ function BookBorrow() {
     }
     return (
         <div className="bookBorrowContainor">
-            <div className="leftContainor">
+            <div className="leftBorrowContainor">
                 <SideBar />
             </div>
-            <div className="rightContainor">
+            <div className="rightBorrowContainor">
                 <Welcome />
                 <div className="bookBorrowRightContainor">
                     <h6><b>Borrow Books</b></h6>
                     <div>
-                        <div className="divFormContainor">
+                        <div className="divBorrowBookFormContainor">
                             <Form>
                                 <Row className="mb-3">
                                     <Form.Label>Member ID</Form.Label>
