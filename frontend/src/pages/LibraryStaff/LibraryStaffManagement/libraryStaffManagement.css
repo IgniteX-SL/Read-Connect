@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.libraryStaffManagementContainor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.leftLibraryStaffManagementContainor{
+    width: 16%;
+    height: 100vh;  
+}
+.rightLibraryStaffManagementContainor{
+    width: 84%;
+    height: 100vh;
+}
+.libraryStaffManagementtileContainor{
+    width: 100%;
+    height: 89%;
+    padding-left: 50px;
+    padding-top: 5px;
+    background-color: #dad7cd;
+}
+.libraryStaffManagementtileContainor h6{
+    color: black;
+}
+.libraryStaffManagementTileRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 28%;
+}
+.libraryStaffManagementTile{
+    width:20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libraryStaffManagementTile:hover{
+    cursor: pointer;
+}
+.textContainor{
+    padding-top: 55px;
+    text-align: center;
+    width: 70%;
+    height: 75%;
+    background: linear-gradient(to bottom, #3a5a40, #588157);
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.textContainor:hover{
+    width: 72%;
+    height: 77%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    text-decoration: none;
+    color: #dad7cd;
+    cursor: pointer;
+}
