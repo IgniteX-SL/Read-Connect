@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bookReservationContainor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    background-color: #dad7cd;
+}
+.leftReservationContainor{
+    width: 16%;
+    height: 120vh;  
+}
+.rightReservationContainor{
+    width: 84%;
+    height: 120vh;
+    background-color: #dad7cd;
+}
+.bookReservationRightContainor{
+    width: 100%;
+    height: 89%;
+    padding-left: 50px;
+    padding-top: 5px;
+    background-color: #dad7cd;
+}
+.bookReservationRightContainor h6{
+    color: black;
+}
+.divReservationBookFormContainor{
+    width: 100%;
+    background-color: #dad7cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mb-3{
+    width: 100vh;
+}
+.buttonDiv{
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.buttonDiv Button{
+    margin: 5px;
+}
