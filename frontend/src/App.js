@@ -16,6 +16,8 @@ import BookDonation from './pages/Books/BookDonation/BookDonation';
 import BookDamages from './pages/Books/BookDamages/BookDamages';
 import BookReservation from './pages/Books/BookReservation/BookReservation';
 import BooksAdd from './pages/Books/BooksAdd/BooksAdd';
+import MemberManagement from './pages/Member/MemberManagement/MemberManagement';
+import LibraryStaffManagement from './pages/LibraryStaff/LibraryStaffManagement/LibraryStaffManagement';
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
           <Route path="/bookReplacement" element={<BookReplacement />} />
           <Route path="/bookDonation" element={<BookDonation />} />
           <Route path="/bookDamage" element={<BookDamages />} />    
-          <Route path="/bookReservation" element={<BookReservation />} />      
+          <Route path="/bookReservation" element={<BookReservation />} />
+          <Route path="/memberManagement" element={<MemberManagement />} />
+          <Route path="/libraryStaffManagement" element={<LibraryStaffManagement />} />  
 
         </Routes>
 

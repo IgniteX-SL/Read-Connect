@@ -32,7 +32,7 @@ body {
 }
 
 .logo-wrapper img {
-  width: 200px;
+  width: 250px;
 }
 
 .sidebar-menu {
@@ -86,8 +86,8 @@ body {
 }
 
 .sidebar-menu li a.nav-link .icon img :hover {
-  width: 21px;
-  height: 21px;
+  width: 23px;
+  height: 23px;
   transition: all 0.2s ease-in-out;
 }
 
