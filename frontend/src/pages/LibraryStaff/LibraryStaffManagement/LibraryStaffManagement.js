@@ -21,10 +21,8 @@ function LibraryStaffManagement() {
                             <div className="textContainor"><Link to="/viewLibraryStaff" className="link">View Library Staff</Link></div>
                         </div>
                         <div className="libraryStaffManagementTile">
-                            <div className="textContainor"><Link to="/generateLibraryStaffReports" className="link">Generate Reports</Link></div>
                         </div>
                         <div className="libraryStaffManagementTile">
-
                         </div>
                     </div>
 
