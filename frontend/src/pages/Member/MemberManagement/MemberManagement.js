@@ -21,7 +21,7 @@ function MemberManagement() {
                             <div className="textContainor"><Link to="/viewMembers" className="link">View Members</Link></div>
                         </div>
                         <div className="memberManagementTile">
-                            <div className="textContainor"><Link to="/generateMemberReports" className="link">Generate Reports</Link></div>
+                            
                         </div>
                         <div className="memberManagementTile">
 
