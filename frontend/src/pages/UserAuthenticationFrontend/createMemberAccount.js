@@ -16,17 +16,16 @@ import Row from 'react-bootstrap/Row';
 export default function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [role, setRole] = useState('')
   const { signup, error, isLoading } = useSignup()
 
   const handleSubmit = async (e) => {
+    var role = "member";
     e.preventDefault()
     await signup({ email, password, role });
     clearForm();
   }
   function clearForm() {
     setEmail("");
-    setRole("");
     setPassword("");
   }
   return (
@@ -41,7 +40,7 @@ export default function Signup() {
             <div className="signUpS">
               <img src={LoginProfile} className='signUpProfileImage'></img>
               <form onSubmit={handleSubmit}>
-                <h3>Create Account</h3>
+                <h3>Create Member Account</h3>
                 <label>Email</label>
                 <input
                   type="email"
