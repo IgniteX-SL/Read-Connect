@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css file/login.css';
+import './login.css';
 import NavBar from '../../components/NavBar/NavBar';
 import LoginProfile from '../../img/loginprofile.png';
 import Footer from '../../components/Footer/Footer';
@@ -13,18 +13,16 @@ import loginPage from './loginImage.jpg'
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('');
   const { login, error, isLoading } = useLogin();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await login({ email, password, role });
+    await login({ email, password});
     clearForm();
   };
 
   function clearForm() {
     setEmail('');
-    setRole('');
     setPassword('');
   }
 

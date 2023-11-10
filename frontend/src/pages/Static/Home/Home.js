@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import './home.css'
 import { Link } from 'react-router-dom';
 import NavBar from '../../../components/NavBar/NavBar';
+import Footer from '../../../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
                 </Button>
             </div>
         </div>
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../css file/changepassword.css';
+import './changepassword.css';
 import NavBar from '../../components/NavBar/NavBar';
-import ChangePageImage from '../../img/changepasswordpage.png';
+import ChangePageImage from './changePassword.jpg';
 import LoginProfile from '../../img/loginprofile.png';
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
@@ -13,7 +13,6 @@ import Row from 'react-bootstrap/Row';
 
 export default function ChnagePassword() {
   const [email, setEmail] = useState('');
-  const [role, setRole] = useState('');
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmNewPassword, setConfirmNewPassword] = useState('');
@@ -21,13 +20,12 @@ export default function ChnagePassword() {
 
   const handlePasswordChange = async (e) => {
     e.preventDefault()
-    await changePassword({ email, role, currentPassword, newPassword, confirmNewPassword });
+    await changePassword({ email, currentPassword, newPassword, confirmNewPassword });
     clearForm();
   }
 
   function clearForm() {
     setEmail("");
-    setRole("");
     setCurrentPassword("");
     setNewPassword("");
     setConfirmNewPassword("");
@@ -46,18 +44,6 @@ export default function ChnagePassword() {
               <img src={LoginProfile} className='loginProfileImage' />
               <form className='change' onSubmit={handlePasswordChange}>
                 <h3>Change Password</h3>
-                <div className="roleDivChangePW">
-                  <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>Role</Form.Label>
-                    <Form.Select value={role} id='roleInput' onChange={(e) => setRole(e.target.value)}>
-                      <option value="" disabled>Select a Role</option>
-                      <option value="librarian">Librarian</option>
-                      <option value="libraryStaff">Library Staff</option>
-                      <option value="admin">Admin</option>
-                      <option value="member">Member</option>
-                    </Form.Select>
-                  </Form.Group>
-                </div>
                 <Row className='md-2'>
                   <Col>
                     <label>Email</label>
@@ -89,7 +75,7 @@ export default function ChnagePassword() {
                     />
                   </Col>
                   <Col className='newPassword'>
-                    <label>Confirm New Password</label>
+                    <label>Confirm Password</label>
                     <input
                       type="password"
                       required

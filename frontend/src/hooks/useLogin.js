@@ -9,27 +9,27 @@ export const useLogin = () => {
   const { dispatch } = useAuthContext();
   const navigate = useNavigate();
 
-  const login = async ({ email, password, role }) => {
+  const login = async ({ email, password}) => {
     setIsLoading(true);
     setError(null);
     try {
       const response = await axios.post('http://localhost:8070/user/login', {
         email,
-        password,
-        role,
+        password
       });
       if (response.status === 200) {
+        const {role} =response.data;
         localStorage.setItem('user', JSON.stringify(response.data));
         dispatch({ type: 'LOGIN', payload: response.data });
         setIsLoading(false);
         if (role === 'librarian') {
-          navigate('/librarianPanel');
+          navigate('/librarianDashboard');
         } else if (role === 'libraryStaff') {
-          navigate('/libraryStaffPanel');
+          navigate('/libraryStaffDashboard');
         } else if (role === 'member') {
-          navigate('/memberPanel');
+          navigate('/memberDashboard');
         } else if (role === 'admin') {
-          navigate('/adminPanel');
+          navigate('/adminDashboard');
         }
       } else {
         setIsLoading(false);
@@ -40,7 +40,7 @@ export const useLogin = () => {
         if (error.response) {
           return error.response.data.error;
         } else {
-          return 'An error occurred while signing up.';
+          return 'An error occurred while login.';
         }
       });
     } finally {

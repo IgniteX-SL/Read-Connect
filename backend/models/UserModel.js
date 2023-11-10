@@ -44,13 +44,13 @@ userSchema.statics.signup = async function({email, password,role}){
 };
 
 
-userSchema.statics.login = async function({ email, password, role }) {
-    if (!email || !password || !role) {
+userSchema.statics.login = async function({ email, password}) {
+    if (!email || !password) {
       throw new Error("All fields must be filled.");
       
     }
   
-    const user = await this.findOne({ email, role }); // Include 'role' in the query
+    const user = await this.findOne({ email});
     if (!user) {
       throw new Error("Incorrect Email");
     }
@@ -62,12 +62,12 @@ userSchema.statics.login = async function({ email, password, role }) {
     return user;
   };
 
-  userSchema.statics.changePassword = async function({ email, role, currentPassword, newPassword, confirmNewPassword }) {
-    if (!email || !role || !currentPassword || !newPassword || !confirmNewPassword) {
+  userSchema.statics.changePassword = async function({ email, currentPassword, newPassword, confirmNewPassword }) {
+    if (!email || !currentPassword || !newPassword || !confirmNewPassword) {
       throw new Error("All fields must be filled.");
     }
   
-    const user = await this.findOne({ email, role });
+    const user = await this.findOne({ email });
     if (!user) {
       throw new Error("User not found.");
     }

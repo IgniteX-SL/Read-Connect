@@ -2,22 +2,22 @@
     padding: 0px;
     margin: 0px;
 }
-.signUpPage{
+.loginPage{
     display: flex;
     height: 750px;
     padding-top: 35px;
     background: linear-gradient(to bottom, #dad7cd, #dad7cd);
 }
-.signUpPageImage{
+.loginPageImage{
     border-radius: 100px;
-    width: 600px;
+    width: 450px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.signUpPageLeft{
+.loginPageLeft{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -25,62 +25,53 @@
     padding-left: 80px;
 }
 
-.signUpPageRight{
+.loginPageRight{
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-.signUpBack{    
+.loginBack{    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.signUpS{
+.loginS{
     width: 600px;
     height: 500px;
     background: linear-gradient(to bottom, #dad7cd, #dad7cd);
     color: black;
     padding: 10px;    
-    /* box-shadow: 0px 0px 3px 0px #000000; */
+    /* box-shadow: 0px 0px 8px 0px white; */
     /* border-radius: 40px; */
 }
 
-.signUpS label,.signUpS input[type="email"],.signUpS input[type="password"]{
+.loginS label,.loginS input[type="email"],.loginS input[type="password"]{
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
 }
-.signUpProfileImage {
-    border-radius: 100px;
-    width: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
 
-.signUpS label{
+.loginS label{
     font-size: 20px;
     margin-top: 20px;
 }
 
-.signUpS input{
+.loginS input{
     width: 60%;
     height: 25px;
 }
 
-.signUpS input[type="email"],.signUpS input[type="password"]{
+.loginS input[type="email"],.loginS input[type="password"]{
     padding-left: 10px;
     width: 350px;
     height: 40px;
 }
 
-.signUpS input[type="submit"]{
+.loginS input[type="submit"]{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,10 +83,10 @@
     height: 30px;
 }
 
-.signUpS input[type="submit"]:hover{
+.loginS input[type="submit"]:hover{
     cursor: pointer;
 }
-.submitBtnSignup{
+.submitBtnLogin{
     background-color: #588157;
     color: white;
     width: 100px;
@@ -108,17 +99,17 @@
     padding: 5px;
     border: none;
 }
-.submitBtnSignup:hover{
+.submitBtnLogin:hover{
     background-color: #344e41;
     color: white;
     cursor: pointer;
     border: none;
 }
-.errorSignup{
-    color: black;
+.errorLogin{
+    color: red;
     font-size: 18px;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 180px;
 }
 
 h3{
@@ -126,6 +117,14 @@ h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.roleDiv{
+    display: flex;
+    margin-bottom: 17px;
+    margin-left: 77px;
+    width: 60%;
+    height: 80px;
+}
+
 .change-password-link a{
     text-decoration: none;
     color: black;
