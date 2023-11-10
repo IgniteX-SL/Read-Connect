@@ -16,12 +16,12 @@ export const useChangePassword = () => {
         })
       };
 
-    const changePassword = async ({ email, role,currentPassword, newPassword, confirmNewPassword }) => {
+    const changePassword = async ({ email,currentPassword, newPassword, confirmNewPassword }) => {
         setIsLoading(true);
         setError(null);
         try {
             const response = await axios.post('http://localhost:8070/user/changepassword', {
-                email, role,currentPassword, newPassword, confirmNewPassword
+                email,currentPassword, newPassword, confirmNewPassword
             });
             if (response.status === 200) {
                 // Handle successful reset, if needed

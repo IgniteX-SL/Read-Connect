@@ -1,6 +1,5 @@
 import React from 'react'
-import '../../css file/signup.css';
-import NavBar from '../../components/NavBar/NavBar';
+import './signup.css';
 import LoginProfile from '../../img/loginprofile.png';
 import SignUpImage from './signUpImage.jpg'
 import Footer from '../../components/Footer/Footer';
@@ -11,7 +10,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-
+import SideBar from '../../components/SideBar/Sidebar';
 
 export default function Signup() {
   const [email, setEmail] = useState('')
@@ -19,7 +18,7 @@ export default function Signup() {
   const { signup, error, isLoading } = useSignup()
 
   const handleSubmit = async (e) => {
-    var role = "libraryStaff";
+    const role = "libraryStaff";
     e.preventDefault()
     await signup({ email, password, role });
     clearForm();
@@ -30,8 +29,10 @@ export default function Signup() {
   }
   return (
     <div>
-      <NavBar />
       <div className='signUpPage'>
+        <div className='sideBarContainor'>
+          <SideBar />
+        </div>
         <div className='signUpPageLeft'>
           <img src= {SignUpImage} className='signUpPageImage'></img>
         </div>
@@ -62,8 +63,6 @@ export default function Signup() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   )
 }
