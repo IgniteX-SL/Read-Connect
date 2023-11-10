@@ -7,10 +7,10 @@
   }
   
   .div-nav-bar {
-    height: 65px;
+    height: 50px;
     width: 100%;
     color: white;
-    background: linear-gradient(to bottom, #0096c7, #023e8a);
+    background: linear-gradient(to bottom, #9c6644, #7f5539);
     position: fixed;
     z-index: 10;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -20,20 +20,20 @@
   .navBarItemList {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     width: 100%;
     margin: 0;
   }
   
   .navBarLeft {
-    width: 35%;
+    width: 50%;
     display: flex;
     align-items: center;
   }
   
   .navBarRight {
-    width: 65%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@
   .navBarItem {
     padding: 20px 0;
     width: 15%;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -55,8 +55,8 @@
   }
   
   .navBarItem:hover {
-    color: #03045e;
-    font-size: 18px;
+    color: #a3b18a;
+    font-size: 16px;
   }
   
   .img-logo {
