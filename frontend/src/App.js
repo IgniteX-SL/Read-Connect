@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Login from './pages/UserAuthenticationFrontend/loginProfile';
-import Signup from './pages/UserAuthenticationFrontend/SignUpProfile';
+import CreateLibrarian from './pages/UserAuthenticationFrontend/createLibrarianAccount';
+import CreateLibraryStaff from './pages/UserAuthenticationFrontend/createLibraryStaffAccount';
+import CreateMember from './pages/UserAuthenticationFrontend/createMemberAccount';
 import ChangePassword from './pages/UserAuthenticationFrontend/changePassword';
 import Table from './components/Table/Table';
 import Home from './pages/Static/Home/Home';
@@ -24,7 +26,9 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/createLibrarian" element={<CreateLibrarian />} />
+          <Route path="/createLibraryStaff" element={<CreateLibraryStaff />} />
+          <Route path="/createMember" element={<CreateMember />} />
           <Route path="/login" element={<Login />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/table" element={<Table />} />
@@ -40,7 +44,6 @@ function App() {
           <Route path="/bookReservation" element={<BookReservation />} />
           <Route path="/memberManagement" element={<MemberManagement />} />
           <Route path="/libraryStaffManagement" element={<LibraryStaffManagement />} />  
-
         </Routes>
 
       </Router>
