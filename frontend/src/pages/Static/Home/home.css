@@ -14,7 +14,7 @@
 
 .homeBackground::before {
     content: "";
-    background-image: url("./backgroundImage.jpg");
+    background-image: url("./backgroundImage2.jpg");
     background-size: cover; /* Add this line */
     background-position: center; /* Add this line */
     opacity: 0.9;
