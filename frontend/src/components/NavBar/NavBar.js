@@ -13,25 +13,25 @@ function NavBar() {
     logout();
   };
 
-  let dashboardRoute;
-  if (user) {
-    switch (user.role) {
-      case "admin":
-        dashboardRoute = "/adminpanel";
-        break;
-      case "staff":
-        dashboardRoute = "/staffpanel";
-        break;
-      case "kitchen":
-        dashboardRoute = "/meals";
-        break;
-      case "pharmacy":
-        dashboardRoute = "/pharmacy";
-        break;
-      default:
-        dashboardRoute = "/";
-    }
-  }
+  // let dashboardRoute;
+  // if (user) {
+  //   switch (user.role) {
+  //     case "admin":
+  //       dashboardRoute = "/adminpanel";
+  //       break;
+  //     case "staff":
+  //       dashboardRoute = "/staffpanel";
+  //       break;
+  //     case "kitchen":
+  //       dashboardRoute = "/meals";
+  //       break;
+  //     case "pharmacy":
+  //       dashboardRoute = "/pharmacy";
+  //       break;
+  //     default:
+  //       dashboardRoute = "/";
+  //   }
+  // }
 
   return (
     <div className="div-nav-bar">
@@ -39,11 +39,6 @@ function NavBar() {
         <Link to="/" className="logo-link">
           {/* <img className="img-logo" src={logo} alt="site logo" /> */}
         </Link>
-        <div id="homeImgContainer">
-          <Link to="/" className="link">
-            <img className="homeIcon" src="https://vectorified.com/images/home-icon-white-2.png" alt="" />
-          </Link>
-        </div>
       </div>
       <div className="navBarRight">
         <ul className="navBarItemList">
@@ -67,11 +62,11 @@ function NavBar() {
               Contact Us
             </Link>
           </li>
-          <li className="navBarItem">
+          {/* <li className="navBarItem">
             <Link to={dashboardRoute} className="link">
               Dashboard
             </Link>
-          </li>
+          </li> */}
           {!user ? (
             <>
               <li className="navBarItem">
