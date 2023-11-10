@@ -48,8 +48,8 @@ function NavBar() {
             </li>
           )}
           <li className="navBarItem" id='ourcenteritem'>
-            <Link to="/serviceFetch" className="link">
-              Our Center
+            <Link to="/" className="link">
+              Home
             </Link>
           </li>
           <li className="navBarItem">

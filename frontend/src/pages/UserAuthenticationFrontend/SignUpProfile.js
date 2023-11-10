@@ -2,7 +2,7 @@ import React from 'react'
 import '../../css file/signup.css';
 import NavBar from '../../components/NavBar/NavBar';
 import LoginProfile from '../../img/loginprofile.png';
-import SignUpImage from '../../img/signuppage.png'
+import SignUpImage from './signUpImage.jpg'
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -37,11 +37,11 @@ export default function Signup() {
           <img src= {SignUpImage} className='signUpPageImage'></img>
         </div>
         <div className='signUpPageRight'>
-          <div className="signupBack">
-            <div className="signupS">
-              <img src={LoginProfile} className='loginProfileImage'></img>
-              <form className='signup' onSubmit={handleSubmit}>
-                <h3>Sign Up</h3>
+          <div className="signUpBack">
+            <div className="signUpS">
+              <img src={LoginProfile} className='signUpProfileImage'></img>
+              <form onSubmit={handleSubmit}>
+                <h3>Create Account</h3>
                 <label>Email</label>
                 <input
                   type="email"
@@ -56,20 +56,7 @@ export default function Signup() {
                   onChange={(e) => setPassword(e.target.value)}
                   value={password}
                 />
-                <div className="roleDiv">
-                  <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>Role</Form.Label>
-                    <Form.Select value={role} id='roleInput' onChange={(e) => setRole(e.target.value)}>
-                      <option value="" disabled>Select a Role</option>
-                      <option value="librarian">Librarian</option>
-                      <option value="libraryStaff">Library Staff</option>
-                      <option value="admin">Admin</option>
-                      <option value="member">Member</option>
-                    </Form.Select>
-                  </Form.Group>
-                </div>
-
-                <button type="submit" onClick={handleSubmit} className='submitBtnSignup' disabled={isLoading}><b>Sign Up</b></button>
+                <button type="submit" onClick={handleSubmit} className='submitBtnSignup' disabled={isLoading}><b>Create</b></button>
                 {error && <div className='errorSignup'>{error}</div>}
               </form>
             </div>
