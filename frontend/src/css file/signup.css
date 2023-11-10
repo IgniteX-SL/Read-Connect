@@ -6,6 +6,16 @@
     display: flex;
     height: 750px;
     padding-top: 35px;
+    background: linear-gradient(to bottom, #dad7cd, #dad7cd);
+}
+.signUpPageImage{
+    border-radius: 100px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .signUpPageLeft{
     width: 50%;
@@ -14,60 +24,63 @@
     align-items: center;
     padding-left: 80px;
 }
+
 .signUpPageRight{
     width: 50%;
     display: flex;
     justify-content: center;
 }
-.loginProfileImage{
-    border-radius: 100px;
-    width: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
-.signupBack{ 
-    background-color: white;
+.signUpBack{    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.signupS{
-    width: 400px;
-    height: 600px;
-    background: linear-gradient(to bottom, #0096c7, #5479F7);
-    color: white;
+.signUpS{
+    width: 600px;
+    height: 500px;
+    background: linear-gradient(to bottom, #dad7cd, #dad7cd);
+    color: black;
     padding: 10px;    
-    border-radius: 40px;
+    /* box-shadow: 0px 0px 3px 0px #000000; */
+    /* border-radius: 40px; */
 }
 
-.signupS label,.signupS input[type="email"],.signupS input[type="password"]{
+.signUpS label,.signUpS input[type="email"],.signUpS input[type="password"]{
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
 }
+.signUpProfileImage {
+    border-radius: 100px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
-.signupS label{
+.signUpS label{
     font-size: 20px;
     margin-top: 20px;
 }
 
-.signupS input{
+.signUpS input{
     width: 60%;
     height: 25px;
 }
 
-.signupS input[type="email"],.signupS input[type="password"]{
+.signUpS input[type="email"],.signUpS input[type="password"]{
     padding-left: 10px;
+    width: 350px;
+    height: 40px;
 }
 
-.signupS input[type="submit"]{
+.signUpS input[type="submit"]{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,43 +92,46 @@
     height: 30px;
 }
 
-.signupS input[type="submit"]:hover{
+.signUpS input[type="submit"]:hover{
     cursor: pointer;
 }
 .submitBtnSignup{
-    background-color: white;
-    color: black;
+    background-color: #588157;
+    color: white;
     width: 100px;
     height: 35px;
     text-align: center;
     border-radius: 5px;
-    margin-left: 145px;
+    margin-left: 233px;
+    margin-bottom: 20px;
     margin-top: 20px;
     padding: 5px;
     border: none;
 }
 .submitBtnSignup:hover{
-    background-color: #0D1282;
+    background-color: #344e41;
     color: white;
     cursor: pointer;
+    border: none;
 }
 .errorSignup{
-    color: #0D1282;
+    color: black;
     font-size: 18px;
-    margin-left: 100px;
     margin-top: 10px;
-
+    margin-left: 100px;
 }
+
 h3{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.roleDiv{
-    display: flex;
-    margin-bottom: 17px;
-    margin-left: 77px;
-    width: 60%;
-    height: 80px;
+.change-password-link a{
+    text-decoration: none;
+    color: black;
+    margin-top: -20px;
+    padding-left: 210px;
+}
+.change-password-link a:hover{
+    color: black;
 }

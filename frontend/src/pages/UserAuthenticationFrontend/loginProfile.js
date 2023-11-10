@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { useLogin } from '../../hooks/useLogin';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import loginPage from '../../img/loginpage.png'
+import loginPage from './loginImage.jpg'
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -56,22 +56,6 @@ export default function Login() {
                   value={password}
                 />
 
-                <div className="roleDiv">
-                  <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>Role</Form.Label>
-                    <Form.Select
-                      value={role}
-                      id='roleInput'
-                      onChange={(e) => setRole(e.target.value)}
-                    >
-                      <option value="" disabled>Select a Role</option>
-                      <option value="librarian">Librarian</option>
-                      <option value="libraryStaff">Library Staff</option>
-                      <option value="admin">Admin</option>
-                      <option value="member">Member</option>
-                    </Form.Select>
-                  </Form.Group>
-                </div>
                 <div className='loginButton'>
                   <button
                     type="submit"
