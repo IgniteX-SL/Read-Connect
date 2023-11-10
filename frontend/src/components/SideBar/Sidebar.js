@@ -11,7 +11,9 @@ function SideBar() {
     <div>
       <div class="sidebar">
         <div class="logo-wrapper">
-          <img src={image} alt="logo" class="logo" />
+          <Link to="/" class="nav-link">
+            <img src={image} alt="logo" class="logo" />
+          </Link>
         </div>
         <ul class="sidebar-menu">
           <li>
