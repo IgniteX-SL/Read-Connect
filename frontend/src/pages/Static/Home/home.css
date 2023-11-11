@@ -4,28 +4,23 @@
 }
 
 .homeBackground {
-    position: relative;
     height: 100vh;
     width: 100%;
+    display: flex;    
+    justify-content: space-between;
+}
+
+.backgroundImageHolder{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.homeBackground::before {
-    content: "";
+    justify-content: right;
+    position: relative;
+    width: 87%;
+    height: 100vh;
     background-image: url("./backgroundImage2.jpg");
-    background-size: cover; /* Add this line */
-    background-position: center; /* Add this line */
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-size: cover;
+    background-position: center;
 }
-
 #intro {
     color: white;
 }
@@ -36,30 +31,28 @@
     display: block; /* Add this line */
 }
 
-.nameLogo .intro {
+/* .nameLogo .intro {
     width: 50%;
     border: border-box; /* This should be border-box or border: 1px solid black; for example */
-}
+/* } */ */
 
 .nameLogo {
-    width: 100%;
+    width: 30%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-}
-.nameLogo img{
-    width: 500px;
-    height: 200px;
+
 }
 .intro {
+    width: 70%;
     margin-right: 5%;
     text-shadow: 5px 5px 5px white;
 }
 
 #buttonHome {
     /* margin-left: 260px; Remove this line or adjust for responsiveness */
-    background-color: #7f5539;
+    background-color: #ee9b00;
     border: none;
 }
 #buttonHome:hover {

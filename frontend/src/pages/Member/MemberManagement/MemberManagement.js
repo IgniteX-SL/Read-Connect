@@ -1,6 +1,6 @@
 import React from "react";
 import "./memberManagement.css";
-import SideBar from "../../../components/SideBar/Sidebar";
+import SideBar from "../../../components/SideBar/SideBar";
 import Welcome from "../../../components/Welcome/Welcome";
 import { Link } from "react-router-dom";
 function MemberManagement() {
