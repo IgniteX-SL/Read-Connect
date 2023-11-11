@@ -1,6 +1,6 @@
 import "./librarianDashboard.css";
-import SideBar from "../../components/SideBar/SideBar";
-import Welcome from "../../components/Welcome/Welcome";
+import SideBar from "../../../components/SideBar/SideBar";
+import Welcome from "../../../components/Welcome/Welcome";
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
