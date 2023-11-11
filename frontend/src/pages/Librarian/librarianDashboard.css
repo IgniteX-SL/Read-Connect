@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.librarianDashboardContainor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    background-color: #dad7cd;
+}
+.leftLibrarianDashboardContainor{
+    width: 16%;
+    height: 120vh;  
+}
+.rightLibrarianDashboardContainor{
+    width: 84%;
+    height: 120vh;
+    background-color: #dad7cd;
+}
+.bookLibrarianDashboardRightContainor{
+    width: 100%;
+    height: 89%;
+    padding-left: 50px;
+    padding-top: 5px;
+    background-color: #dad7cd;
+}
+.bookLibrarianDashboardRightContainor h6{
+    color: black;
+}

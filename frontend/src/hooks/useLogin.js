@@ -25,7 +25,7 @@ export const useLogin = () => {
         if (role === 'librarian') {
           navigate('/librarianDashboard');
         } else if (role === 'libraryStaff') {
-          navigate('/libraryStaffDashboard');
+          navigate('/librarianDashboard');
         } else if (role === 'member') {
           navigate('/memberDashboard');
         } else if (role === 'admin') {
