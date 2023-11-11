@@ -1,14 +1,11 @@
 import React from 'react';
 import './login.css';
-import NavBar from '../../components/NavBar/NavBar';
 import LoginProfile from '../../img/loginprofile.png';
-import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useLogin } from '../../hooks/useLogin';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 import loginPage from './loginImage.jpg'
+import SideBar from '../../components/SideBar/SideBar';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -28,8 +25,10 @@ export default function Login() {
 
   return (
     <div>
-      <NavBar />
       <div className='loginPage'>
+        <div className='sideBarContainor'>
+          <SideBar />
+        </div>
         <div className='loginPageLeft'>
           <img src={loginPage} className='loginPageImage'></img>
         </div>
@@ -72,8 +71,6 @@ export default function Login() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

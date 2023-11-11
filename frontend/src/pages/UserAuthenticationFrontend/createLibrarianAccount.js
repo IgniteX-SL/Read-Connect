@@ -2,15 +2,11 @@ import React from 'react'
 import './signup.css';
 import LoginProfile from '../../img/loginprofile.png';
 import SignUpImage from './signUpImage.jpg'
-import Footer from '../../components/Footer/Footer';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useSignup } from '../../hooks/useSignup';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import SideBar from '../../components/SideBar/Sidebar';
+import SideBar from '../../components/SideBar/SideBar';
+
+
 
 export default function Signup() {
   const [email, setEmail] = useState('')

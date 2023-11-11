@@ -10,6 +10,7 @@ import { useChangePassword } from '../../hooks/useChangePassword';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import SideBar from '../../components/SideBar/SideBar';
 
 export default function ChnagePassword() {
   const [email, setEmail] = useState('');
@@ -33,8 +34,10 @@ export default function ChnagePassword() {
 
   return (
     <div>
-      <NavBar />
       <div className='changePasswordPage'>
+        <div className='sideBarContainor'>
+          <SideBar />
+        </div>
         <div className='changePageLeft'>
           <img src={ChangePageImage} className='changePageImage'></img>
         </div>
@@ -95,9 +98,6 @@ export default function ChnagePassword() {
           </div>
         </div>
       </div>
-
-
-      <Footer />
     </div>
   );
 }  

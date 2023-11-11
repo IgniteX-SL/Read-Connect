@@ -1,5 +1,5 @@
 import "./bookReturn.css";
-import SideBar from "../../../components/SideBar/Sidebar";
+import SideBar from "../../../components/SideBar/SideBar";
 import Welcome from "../../../components/Welcome/Welcome";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
