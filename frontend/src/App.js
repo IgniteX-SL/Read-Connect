@@ -20,6 +20,7 @@ import BookReservation from './pages/Books/BookReservation/BookReservation';
 import BooksAdd from './pages/Books/BooksAdd/BooksAdd';
 import MemberManagement from './pages/Member/MemberManagement/MemberManagement';
 import LibraryStaffManagement from './pages/LibraryStaff/LibraryStaffManagement/LibraryStaffManagement';
+import LibrarianDashboard from './pages/Librarian/LibrarianDashboard';
 
 function App() {
   return (
@@ -43,7 +44,8 @@ function App() {
           <Route path="/bookDamage" element={<BookDamages />} />    
           <Route path="/bookReservation" element={<BookReservation />} />
           <Route path="/memberManagement" element={<MemberManagement />} />
-          <Route path="/libraryStaffManagement" element={<LibraryStaffManagement />} />  
+          <Route path="/libraryStaffManagement" element={<LibraryStaffManagement />} /> 
+          <Route path="/librarianDashboard" element={<LibrarianDashboard />} /> 
         </Routes>
 
       </Router>
