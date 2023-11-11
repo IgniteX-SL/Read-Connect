@@ -44,24 +44,30 @@
 .bookManagementTitle:hover{
     cursor: pointer;
 }
-.textContainor{
+.textContainorBook{
     padding-top: 55px;
     text-align: center;
     width: 70%;
     height: 75%;
-    background: linear-gradient(to bottom, #3a5a40, #588157);
+    /* background: linear-gradient(to bottom, #3a5a40, #588157); */
     border-radius: 20px;
-    color: white;
+    color: black;
     transition: all 0.3s ease-in-out;
     font-size: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #588157;
 }
-.textContainor:hover{
+.textContainorBook:hover{
     width: 72%;
     height: 77%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     font-size: 15px;
     text-decoration: none;
-    color: #dad7cd;
+    /* color: #dad7cd; */
     cursor: pointer;
+}
+.textContainorBook img{
+    width: 40%;
+    height: 80%;
+    margin-top: -35px;
 }
