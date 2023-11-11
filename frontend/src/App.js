@@ -20,7 +20,7 @@ import BookReservation from './pages/Books/BookReservation/BookReservation';
 import BooksAdd from './pages/Books/BooksAdd/BooksAdd';
 import MemberManagement from './pages/Member/MemberManagement/MemberManagement';
 import LibraryStaffManagement from './pages/LibraryStaff/LibraryStaffManagement/LibraryStaffManagement';
-import LibrarianDashboard from './pages/Librarian/LibrarianDashboard';
+import LibrarianDashboard from './pages/Librarian/librarianDashboard/LibrarianDashboard';
 
 function App() {
   return (
