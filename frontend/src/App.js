@@ -21,6 +21,9 @@ import BooksAdd from './pages/Books/BooksAdd/BooksAdd';
 import MemberManagement from './pages/Member/MemberManagement/MemberManagement';
 import LibraryStaffManagement from './pages/LibraryStaff/LibraryStaffManagement/LibraryStaffManagement';
 import LibrarianDashboard from './pages/Librarian/librarianDashboard/LibrarianDashboard';
+import RegisterMember from './pages/Member/RegisterMember/RegisterMember';
+import RegisterLibraryStaff from './pages/LibraryStaff/RegisterLibraryStaff/RegisterLibraryStaff';
+import RegisterLibrarian from './pages/Librarian/RegisterLibrarian/RegisterLibrarian';
 
 function App() {
   return (
@@ -46,6 +49,9 @@ function App() {
           <Route path="/memberManagement" element={<MemberManagement />} />
           <Route path="/libraryStaffManagement" element={<LibraryStaffManagement />} /> 
           <Route path="/librarianDashboard" element={<LibrarianDashboard />} /> 
+          <Route path='/registerMembers' element={<RegisterMember />} />
+          <Route path='/registerLibraryStaff' element={<RegisterLibraryStaff />} />
+          <Route path='/registerLibrarian' element={<RegisterLibrarian />} />
         </Routes>
 
       </Router>

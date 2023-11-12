@@ -30,20 +30,8 @@ const LibraryStaffSchema=new Schema({
         type:String,
         required:false
     },
-    password:{
-        type:String,
-        required:true
-    },
-    confirmPassword:{
-        type:String,
-        required:true
-    },
     profilePicture:{
         type:Object,
-        required:false
-    },
-    assignedDate:{
-        type:Date,
         required:false
     },
     isActiveUser:{
