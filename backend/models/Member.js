@@ -1,6 +1,11 @@
 const mongoose= require('mongoose');
 const Schema =mongoose.Schema;
 const MemberSchema=new Schema({
+    memberID:{
+        type:String,
+        required:true,
+        unique:true
+    },
     name:{
         type:String,
         required:true
@@ -38,16 +43,8 @@ const MemberSchema=new Schema({
         type:String,
         required:false
     },
-    password:{
+    email :{
         type:String,
-        required:true
-    },
-    confirmPassword:{
-        type:String,
-        required:true
-    },
-    createdDate:{
-        type:Date,
         required:false
     },
     isActiveUser:{
