@@ -41,10 +41,6 @@ const PayFineSchema=new Schema({
         type:String,
         required:true
     },
-    fineStatus:{
-        type:String,
-        required:true
-    }
 })
 const PayFine=mongoose.model("PayFine",PayFineSchema);
 module.exports=PayFine;
