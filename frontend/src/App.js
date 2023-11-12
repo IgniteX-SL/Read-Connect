@@ -24,7 +24,7 @@ import LibrarianDashboard from './pages/Librarian/librarianDashboard/LibrarianDa
 import RegisterMember from './pages/Member/RegisterMember/RegisterMember';
 import RegisterLibraryStaff from './pages/LibraryStaff/RegisterLibraryStaff/RegisterLibraryStaff';
 import RegisterLibrarian from './pages/Librarian/RegisterLibrarian/RegisterLibrarian';
-
+import FineManagement from './pages/Member/FineManagement/FineManagement';
 function App() {
   return (
     <div className="App">
@@ -52,6 +52,7 @@ function App() {
           <Route path='/registerMembers' element={<RegisterMember />} />
           <Route path='/registerLibraryStaff' element={<RegisterLibraryStaff />} />
           <Route path='/registerLibrarian' element={<RegisterLibrarian />} />
+          <Route path='/fineManagement' element={<FineManagement />} />
         </Routes>
 
       </Router>

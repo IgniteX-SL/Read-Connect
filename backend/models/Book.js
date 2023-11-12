@@ -46,10 +46,6 @@ const BookSchema=new Schema({
         type:String,
         required:false
     },
-    publish:{
-        type:String,
-        required:false
-    },
     publishedYear:{
         type:String,
         required:false
@@ -87,10 +83,6 @@ const BookSchema=new Schema({
         required:false
     },
     noteID:{
-        type:String,
-        required:false
-    },
-    borrowalID:{
         type:String,
         required:false
     },
