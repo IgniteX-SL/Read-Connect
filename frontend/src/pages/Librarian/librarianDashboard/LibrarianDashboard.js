@@ -16,6 +16,20 @@ function LibrarianDashboard() {
                 <Welcome />
                 <div className="bookLibrarianDashboardRightContainor">
                     <h6><b>Librarian Dashboard</b></h6>
+                    <div className="dashboardTilesRow">
+                        <div className="dashboardTile">
+                            100 Users Today
+                        </div>
+                        <div className="dashboardTile">
+                            5000 Books
+                        </div>
+                        <div className="dashboardTile">
+                            1000 Members
+                        </div>
+                        <div className="dashboardTile">
+                            5 Staff Members
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>

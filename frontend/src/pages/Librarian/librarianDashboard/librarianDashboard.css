@@ -29,3 +29,31 @@
 .bookLibrarianDashboardRightContainor h6{
     color: black;
 }
+.dashboardTilesRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 100px;
+}
+.dashboardTile{
+    width: 15%;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    padding: 5px;
+    color: white;
+    background-color: #3a5a40;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+}
+.dashboardTile:hover{
+    background-color: #344e41;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 16px;
+}
