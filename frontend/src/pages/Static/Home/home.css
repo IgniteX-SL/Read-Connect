@@ -22,7 +22,7 @@
     background-position: center;
 }
 #intro {
-    color: black;
+    color: #d90429;
     text-align: justify;
     width: 85%;
 }
@@ -30,7 +30,8 @@
 .intro h1{
     font-size: 60px;
     color: black;
-    display: block; /* Add this line */
+    display: block;
+    text-shadow: 5px 5px 5px white; /* Add this line */
 }
 
 /* .nameLogo .intro {
@@ -49,7 +50,7 @@
 .intro {
     width: 70%;
     margin-right: 5%;
-    text-shadow: 5px 5px 5px white;
+    /* text-shadow: 5px 5px 5px white; */
 }
 
 #buttonHome {
@@ -58,7 +59,7 @@
     border: none;
 }
 #buttonHome:hover {
-    background-color: #90e0ef;
+    background-color: #f77f00;
     color: black;
     border: none;
 }

@@ -4,7 +4,8 @@ import Welcome from "../../../components/Welcome/Welcome";
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-
+import Chart1 from './Chart1';
+//var CanvasJSReact = require('@canvasjs/react-charts');
 
 function LibrarianDashboard() {
     return (
@@ -28,8 +29,32 @@ function LibrarianDashboard() {
                         </div>
                         <div className="dashboardTile">
                             5 Staff Members
-                        </div>    
+                        </div>
                     </div>
+                    <div className="firstRow">
+                        <div className="chart1Containor">
+                            <h6><b>Borrowing And Returning Books</b></h6>
+                            <Chart1 />
+                        </div>
+                        <div className="tableContainor">
+                            
+                        </div>
+                        <div className="tableContainor">
+
+                        </div>
+                    </div>
+                    <div className="firstRow">
+                        <div className="tableContainor">
+
+                        </div>
+                        <div className="tableContainor">
+
+                        </div>
+                        <div className="tableContainor">
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

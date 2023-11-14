@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@canvasjs/charts": "^3.7.17",
+    "@canvasjs/charts": "^3.7.27",
     "@canvasjs/react-charts": "^1.0.0",
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
