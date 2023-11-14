@@ -40,7 +40,7 @@ function FineManagement() {
             <div className="rightfineManagementContainor">
                 <Welcome />
                 <div className="fineManagementRightContainor">
-                    <h6><b>Fine Management</b></h6>
+                    <h6><b>Pay Fines</b></h6>
                     <div>
                         <div className="divfineManagementFormContainor">
                             <Form>

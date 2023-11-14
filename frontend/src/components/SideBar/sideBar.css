@@ -61,6 +61,8 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 3px;
 }
 
 .sidebar-menu li a.nav-link.active {
@@ -86,13 +88,14 @@ body {
 }
 
 .sidebar-menu li a.nav-link .icon img :hover {
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   transition: all 0.2s ease-in-out;
 }
 
 .sidebar-menu li a.nav-link:hover {
   color: #dad7cd;
+  background-color: #588157;
 }
 
 .sidebar-menu li a.nav-link:hover .icon {

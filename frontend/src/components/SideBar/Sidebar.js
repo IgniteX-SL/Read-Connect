@@ -9,6 +9,7 @@ function SideBar() {
   const iconStyle = { filter: 'invert(1)' };
   const { user } = useAuthContext();
   const { logout } = useLogout();
+  
   const handleClick = () => {
     logout();
   };
@@ -89,7 +90,7 @@ function SideBar() {
                     <span class="icon">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAS9JREFUSEvtlgFOwzAMRf9OAjsJcBK2kwAnAU6y7STbTjL0qqRyrZK46aQhVkvVpDbxc/5sxyvdyFY34moO+FnSKT2T428Ff0raJNqXpI+pAUwFAwM6ZltJ+2gAUTCyvknit2SACYC/oGgRsJW15i9/r8pfApdkBYDzs6RXSY9T5R8D12RFxhcjJ9BdAT4qvwdHZCWD390JI/sG8lswzkigmuGABLIW3dsH3QIGuHZSH2vRpu+zwfjByYNpJBH2VcARkF/zt8BERylRGtlsBl/Me0qEksJYbztazhufcKxnX2e+nBbwInXOjf+RXGQ0V1weaTgdJzukY9o+zg31nd77a5G8wJ5cmdHj2dOVVGuvbulauc12N9t9g5kkfhthWqX1+/o5PDLsXQs68HN/4B/ajm4fpEKi5gAAAABJRU5ErkJggg==" style={iconStyle} />
                     </span>
-                    Fine Management
+                    Pay Fines
                   </Link>
                 </li>
                 <li>

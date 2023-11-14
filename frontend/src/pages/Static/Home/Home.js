@@ -15,7 +15,7 @@ export default function Home() {
         <div className='backgroundImageHolder'>
           <div className="intro">
             <h1>Welcome to Read Connect</h1>
-            <p id='intro'>Read Connect is a state-of-the-art Library Management System designed exclusively for libraries. Packed with robust features, our user-friendly platform caters to the needs of librarians and library staff members, providing a seamless and efficient solution for all library operations. From cataloging and circulation to user management and reporting, Read Connect is your go-to resource for elevating library services.</p>
+            <p id='intro'><b>Read Connect is Your Gateway to Seamless Library Management! Enjoy a user-friendly experience . Connect with books effortlessly, whether you're a librarian, library staff, or member. Streamline registrations, manage books, get recommendations, and stay connected with notifications. Experience the future of library management with Read Connect.</b></p>
             <Button id='buttonHome'>
               <Link to="/login" className='linkHome'>
                 Login
