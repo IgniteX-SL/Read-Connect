@@ -237,8 +237,8 @@ function BooksAdd() {
                                 <br />
                                 <br />
                                 <div className="buttonDiv">
-                                    <Button variant="success" onClick={addButton}>Add Borrowal</Button>{' '}
-                                    <Button variant="success" onClick={viewButton}>View Borrowals</Button>{' '}
+                                    <Button variant="success" onClick={addButton}>Add Book</Button>{' '}
+                                    <Button variant="success" onClick={viewButton}>View Books</Button>{' '}
                                 </div>
                             </Form>
 

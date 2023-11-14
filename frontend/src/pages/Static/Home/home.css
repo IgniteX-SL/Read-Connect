@@ -17,17 +17,17 @@
     position: relative;
     width: 87%;
     height: 100vh;
-    background-image: url("./backgroundImage7.jpg");
+    background-image: url("./backgroundImage8.jpg");
     background-size: cover;
     background-position: center;
 }
 #intro {
-    color: white;
+    color: black;
 }
 
 .intro h1{
     font-size: 60px;
-    color: #dad7cd;
+    color: black;
     display: block; /* Add this line */
 }
 
@@ -52,11 +52,12 @@
 
 #buttonHome {
     /* margin-left: 260px; Remove this line or adjust for responsiveness */
-    background-color: #ee9b00;
+    background-color: #3a86ff;
     border: none;
 }
 #buttonHome:hover {
-    background-color: #a87d5d;
+    background-color: #90e0ef;
+    color: black;
     border: none;
 }
 

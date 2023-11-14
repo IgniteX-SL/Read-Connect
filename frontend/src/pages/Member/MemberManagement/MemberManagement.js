@@ -15,7 +15,7 @@ function MemberManagement() {
                     <h6><b>Member Management</b></h6>
                     <div className="memberManagementTileRow">
                         <div className="memberManagementTile">
-                            <div className="textMemberContainor"><Link to="/registerMembers" className="link"><img src="https://cdn2.iconfinder.com/data/icons/ecommerce-line-pack/40/SignUp-512.png" /><br></br>Register Members</Link></div>
+                            <div className="textMemberContainor"><Link to="/registerMembers" className="link"><img src="https://cdn2.iconfinder.com/data/icons/back-to-school-solid/64/learn_School-28-512.png" /><br></br>Register Members</Link></div>
                         </div>
                         <div className="memberManagementTile">
                             <div className="textMemberContainor"><Link to="/viewMembers" className="link"><img src="https://cdn2.iconfinder.com/data/icons/ui-22/24/522-512.png" /><br></br>View Members</Link></div>

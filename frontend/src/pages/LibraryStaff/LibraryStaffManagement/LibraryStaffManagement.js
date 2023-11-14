@@ -15,7 +15,7 @@ function LibraryStaffManagement() {
                     <h6><b>Library Staff Management</b></h6>
                     <div className="libraryStaffManagementTileRow">
                         <div className="libraryStaffManagementTile">
-                            <div className="textLibraryStaffContainor"><Link to="/registerLibraryStaff" className="link"><img src="https://cdn2.iconfinder.com/data/icons/ecommerce-line-pack/40/SignUp-512.png" /><br></br>Register Library Staff</Link></div>
+                            <div className="textLibraryStaffContainor"><Link to="/registerLibraryStaff" className="link"><img src="https://cdn2.iconfinder.com/data/icons/back-to-school-solid/64/learn_School-28-512.png" /><br></br>Register Library Staff</Link></div>
                         </div>
                         <div className="libraryStaffManagementTile">
                             <div className="textLibraryStaffContainor"><Link to="/viewLibraryStaff" className="link"><img src="https://cdn2.iconfinder.com/data/icons/ui-22/24/522-512.png" /><br></br>View Library Staff</Link></div>
