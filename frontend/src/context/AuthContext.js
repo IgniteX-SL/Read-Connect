@@ -14,16 +14,17 @@ export const authReducer = (state, action) => {
 }
 
 export const AuthContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(authReducer, { 
-    user: JSON.parse(localStorage.getItem('user') ?? '{}')
-  })
+  const storedUser = JSON.parse(localStorage.getItem('user')) || null;
 
-  console.log('AuthContext state:', state)
-  
+  const [state, dispatch] = useReducer(authReducer, {
+    user: storedUser,
+  });
+
+  console.log('AuthContext state:', state);
+
   return (
     <AuthContext.Provider value={{ ...state, dispatch }}>
-      { children }
+      {children}
     </AuthContext.Provider>
-  )
-
-}
+  );
+};
