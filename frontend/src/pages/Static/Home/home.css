@@ -23,6 +23,8 @@
 }
 #intro {
     color: black;
+    text-align: justify;
+    width: 85%;
 }
 
 .intro h1{
