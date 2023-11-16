@@ -78,11 +78,11 @@
     /* margin-left: 260px; Remove this line or adjust for responsiveness */
     background-color: #c1121f;
     border: none;
-    color: black;
+    color: white;
 }
 #buttonHome:hover {
     background-color: #780000;
-    color: black;
+    color: white;
     border: none;
 }
 
