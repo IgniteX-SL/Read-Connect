@@ -33,6 +33,7 @@
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .signUpBack{    
@@ -51,7 +52,7 @@
     /* border-radius: 40px; */
 }
 
-.signUpS label,.signUpS input[type="email"],.signUpS input[type="password"]{
+.signUpS label,.signUpS input[type="email"],.signUpS input[type="password"],.signUpS input[type="text"]{
     margin: auto;
     display: flex;
     align-items: center;
@@ -64,7 +65,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: -50px;
     margin-bottom: 10px;
 }
 
@@ -78,7 +79,7 @@
     height: 25px;
 }
 
-.signUpS input[type="email"],.signUpS input[type="password"]{
+.signUpS input[type="email"],.signUpS input[type="password"],.signUpS input[type="text"]{
     padding-left: 10px;
     width: 350px;
     height: 40px;

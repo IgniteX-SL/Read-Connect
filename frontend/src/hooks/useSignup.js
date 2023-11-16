@@ -19,13 +19,14 @@ export const useSignup = () => {
     });
   };
 
-  const signup = async ({ email, password, role }) => {
+  const signup = async ({ email, password,name, role }) => {
     setIsLoading(true);
     setError(null);
     try {
       const response = await axios.post('http://localhost:8070/user/signup', {
         email,
         password,
+        name,
         role,
       });
       if (response.status === 200) {

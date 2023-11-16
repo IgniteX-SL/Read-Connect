@@ -12,16 +12,17 @@ const loginUser = async (req, res) => {
         const user = await User.login({email, password});
         const token = createToken(user._id, user.role); // Include the user's role in the token
         const role=user.role;
-        res.status(200).json({ email, token,role});
+        const name=user.name;
+        res.status(200).json({ email, token,role,name});
     } catch (err) {
         res.status(400).json({ error: err.message });
     }
 };
 
 const signupUser = async (req, res) => {
-    const { email, password, role } = req.body;
+    const { email, password, name, role } = req.body;
     try {
-        const user = await User.signup({email, password, role});
+        const user = await User.signup({email, password, name, role});
         const token = createToken(user._id, user.role); // Include the user's role in the token
         res.status(200).json({ email, token});
     } catch (err) {

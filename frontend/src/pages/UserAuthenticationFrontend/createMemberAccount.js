@@ -10,17 +10,19 @@ import SideBar from '../../components/SideBar/SideBar';
 export default function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [name, setName] = useState('')
   const { signup, error, isLoading } = useSignup()
 
   const handleSubmit = async (e) => {
     const role = "member";
     e.preventDefault()
-    await signup({ email, password, role });
+    await signup({ email, password,name, role });
     clearForm();
   }
   function clearForm() {
     setEmail("");
     setPassword("");
+    setName("");
   }
   return (
     <div>
@@ -50,6 +52,13 @@ export default function Signup() {
                   required
                   onChange={(e) => setPassword(e.target.value)}
                   value={password}
+                />
+                <label>Name</label>
+                <input
+                  type="text"
+                  required
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                 />
                 <button type="submit" onClick={handleSubmit} className='submitBtnSignup' disabled={isLoading}><b>Create</b></button>
                 {error && <div className='errorSignup'>{error}</div>}
