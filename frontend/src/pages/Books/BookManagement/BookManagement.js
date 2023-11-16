@@ -24,7 +24,7 @@ function BookManagement() {
                             <div className="textContainorBook"><Link to="/bookPurchaiseAdd" className="link"><img src="https://cdn1.iconfinder.com/data/icons/sale-closing-techniques/64/guidebook-sale-guide-book-marketing-512.png" /><br></br>Book Purchaising</Link></div>
                         </div>
                         <div className="bookManagementTile">
-                            <div className="textContainorBook"><Link to="/bookGovernmentGrants" className="link"><img src="https://cdn4.iconfinder.com/data/icons/book-genres-2/340/book_politics_political_paper_law_government_book-512.png" /><br></br>Government Grants</Link></div>
+                            <div className="textContainorBook"><Link to="/bookReservation" className="link"><img src="https://cdn4.iconfinder.com/data/icons/hotel-and-restaurant-line-vol-4/52/reserve__reserved__ingots__preserved__book__reservedtable__reservedseat-512.png" /><br></br>Book Reservation</Link></div>
                         </div>
                     </div>
                     <div className="bookManagementTileRow">
@@ -46,10 +46,10 @@ function BookManagement() {
                             <div className="textContainorBook"><Link to="/bookDamage" className="link"><img src="https://cdn3.iconfinder.com/data/icons/books-outline-4/60/Old-Book-ripped-damaged-broken-512.png" /><br></br>Mark Damages</Link></div>
                         </div>
                         <div className="bookManagementTile">
-                            <div className="textContainorBook"><Link to="/bookReservation" className="link"><img src="https://cdn4.iconfinder.com/data/icons/hotel-and-restaurant-line-vol-4/52/reserve__reserved__ingots__preserved__book__reservedtable__reservedseat-512.png" /><br></br>Book Reservation</Link></div>
+
                         </div>
                         <div className="bookManagementTile">
-                            <div className="textContainorBook"><Link to="/bookStockTaking" className="link"><img src="https://cdn4.iconfinder.com/data/icons/school-education-58/66/Books_Stocks_1-512.png" /><br></br>Stock Taking</Link></div>
+
                         </div>
                         <div className="bookManagementTile">
 
