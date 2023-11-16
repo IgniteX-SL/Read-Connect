@@ -4,21 +4,30 @@
 }
 .loginPage{
     display: flex;
-    height: 780px;
-    padding-top: 35px;
     background: linear-gradient(to bottom, #dad7cd, #dad7cd);
+}
+.loginPageHolder{
+    width: 100%;
+    height: 100vh;
 }
 .loginPageImage{
     border-radius: 100px;
-    width: 450px;
+    width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.loginPageContainor{
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
 .loginPageLeft{
-    width: 50%;
+    width: 45%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,9 +35,11 @@
 }
 
 .loginPageRight{
-    width: 50%;
+    width: 40%;
+    height: 80vh;
     display: flex;
     justify-content: center;
+    align-items: center;    
 }
 
 .loginBack{    
@@ -133,4 +144,12 @@ h3{
 }
 .change-password-link a:hover{
     color: black;
+}
+.waveContainor{
+    width: 100%;
+    height: 15vh;
+}
+.waveContainor img{
+    width: 100%;
+    height: 15vh;
 }
