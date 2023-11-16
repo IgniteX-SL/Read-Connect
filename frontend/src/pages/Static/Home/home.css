@@ -14,23 +14,28 @@
     background-repeat: no-repeat;
     background-size: cover; */
 }
+.introImageWaveContainor{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #dad7cd, #a3b18a);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+}
 .introAndImageHolder{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #dad7cd, #a3b18a);
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+    height: 85vh;
 }
 .nameLogo {
     width: 19%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 .introHolder{
     width: 45%;
-    height: 85vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +47,7 @@
     align-items: center;
     justify-content: center;
     width: 30%;
-    height: 85vh;
+    height: 80vh;
 }
 .backgroundImageHolder img{
     width: 450px;
@@ -94,4 +99,12 @@
 .linkHome {
     text-decoration: none;
     color: white;
+}
+.waveContainor{
+    width: 100%;
+    height: 15vh;
+}
+.waveContainor img{
+    width: 100%;
+    height: 15vh;
 }

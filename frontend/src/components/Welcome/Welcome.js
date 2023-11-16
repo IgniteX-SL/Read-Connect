@@ -6,7 +6,7 @@ function Welcome(){
     return(
         <div className="welcomeHeader">
             <div className="welcomeText">
-                <h6>Welcome  <b> {user.name}</b></h6>
+                <h6>Hello  <b> {user.name}</b></h6>
             </div>
             <hr></hr>
         </div>
