@@ -7,31 +7,59 @@
     height: 100vh;
     width: 100%;
     display: flex;    
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: #344e41;
+    /* background-image: src("./backImage.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
-
+.introAndImageHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #dad7cd, #a3b18a);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+}
+.nameLogo {
+    width: 19%;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.introHolder{
+    width: 45%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: +1;
+    padding: 30px;
+}
 .backgroundImageHolder{
     display: flex;
     align-items: center;
-    justify-content: right;
-    position: relative;
-    width: 87%;
-    height: 100vh;
-    background-image: url("./backgroundImage8.jpg");
-    background-size: cover;
-    background-position: center;
+    justify-content: center;
+    width: 30%;
+    height: 85vh;
+}
+.backgroundImageHolder img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
 }
 #intro {
-    color: #d90429;
+    color: black;
     text-align: justify;
-    width: 85%;
+    width: 100%;
 }
 
 .intro h1{
-    font-size: 60px;
+    font-size: 50px;
     color: black;
     display: block;
-    text-shadow: 5px 5px 5px white; /* Add this line */
+    text-shadow: 5px 5px 5px white;
 }
 
 /* .nameLogo .intro {
@@ -39,14 +67,7 @@
     border: border-box; /* This should be border-box or border: 1px solid black; for example */
 /* } */ */
 
-.nameLogo {
-    width: 30%;
-    height: 100vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 
-}
 .intro {
     width: 70%;
     margin-right: 5%;
@@ -55,11 +76,12 @@
 
 #buttonHome {
     /* margin-left: 260px; Remove this line or adjust for responsiveness */
-    background-color: #3a86ff;
+    background-color: #c1121f;
     border: none;
+    color: black;
 }
 #buttonHome:hover {
-    background-color: #f77f00;
+    background-color: #780000;
     color: black;
     border: none;
 }
