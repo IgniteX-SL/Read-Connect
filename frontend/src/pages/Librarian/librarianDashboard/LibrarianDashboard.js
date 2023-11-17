@@ -70,17 +70,17 @@ function LibrarianDashboard() {
                                 <div className="librarianDashboardTableHeaderItem">Short</div>
                             </div>
                             <div className="librarianDashboardTableItem">
-                                <div className="librarianDashboardTableHeaderItem">5</div>
-                                <div className="librarianDashboardTableHeaderItem">B. Name</div>
-                                <div className="librarianDashboardTableHeaderItem">Author</div>
-                                <div className="librarianDashboardTableHeaderItem">Category</div>
+                                <div className="librarianDashboardTableHeaderItem">9</div>
+                                <div className="librarianDashboardTableHeaderItem">Apegama</div>
+                                <div className="librarianDashboardTableHeaderItem">M. Wick</div>
+                                <div className="librarianDashboardTableHeaderItem">Novel</div>
                             </div>
                             <div className="librarianDashboardTableItem">
                                 <div className="librarianDashboardTableHeaderItem">7</div>
                                 <div className="librarianDashboardTableHeaderItem">S. Holmes</div>
                                 <div className="librarianDashboardTableHeaderItem">A.C.Doyle</div>
                                 <div className="librarianDashboardTableHeaderItem">Short</div>
-                            </div>                            
+                            </div>
                         </div>
                         <div className="dashboardTableContainor">
                             <h6><b>Damaged Books</b></h6>
