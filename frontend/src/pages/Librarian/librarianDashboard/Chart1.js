@@ -16,6 +16,7 @@ class Chart1 extends Component {
 			// legend: {
 			// 	verticalAlign: "top"
 			// },
+			backgroundColor: "transparent",
 			axisY: {
 				suffix: "%"
 			},

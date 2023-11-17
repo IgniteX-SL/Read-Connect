@@ -21,21 +21,22 @@
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
 }
 .introAndImageHolder{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 78vh;
 }
 .nameLogo {
     width: 19%;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 .introHolder{
     width: 45%;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +48,7 @@
     align-items: center;
     justify-content: center;
     width: 30%;
-    height: 80vh;
+    height: 75vh;
 }
 .backgroundImageHolder img{
     width: 450px;
