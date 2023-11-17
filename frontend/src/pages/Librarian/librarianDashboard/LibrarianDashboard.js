@@ -5,6 +5,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Chart1 from './Chart1';
+import Chart2 from './Chart2';
 //var CanvasJSReact = require('@canvasjs/react-charts');
 
 function LibrarianDashboard() {
@@ -37,7 +38,7 @@ function LibrarianDashboard() {
                             <Chart1 />
                         </div>
                         <div className="tableContainor">
-                            
+
                         </div>
                         <div className="tableContainor">
 
@@ -50,8 +51,9 @@ function LibrarianDashboard() {
                         <div className="tableContainor">
 
                         </div>
-                        <div className="tableContainor">
-
+                        <div className="chart1Containor">
+                            <h6><b>Reserved And Not Reserved Books</b></h6>
+                            <Chart2 />
                         </div>
                     </div>
 
