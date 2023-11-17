@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "Kasun Udara , Samudi Perera , Thushanka Pramuditha, Pramukha Thenuwara, Dinushanka Shyamal",
+  "author": "Kasun Udara",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
