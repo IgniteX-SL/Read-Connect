@@ -60,7 +60,6 @@
 }
 
 .dashboardTile:hover {
-    background-color: #344e41;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     font-size: 16px;
@@ -85,8 +84,32 @@
     text-align: center;
 }
 
-.tableContainor {
-    width: 30%;
+.dashboardTableContainor {
+    width: 27%;
     height: 300px;
-    border: 1px solid red;
+}
+.dashboardTableContainor h6{
+    color: black;
+    text-align: center;
+}
+.librarianDashboardTableHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #3a5a40;
+    font-size: 15px;
+}
+.librarianDashboardTableHeaderItem{
+    width: 25%;
+    text-align: center;
+}
+.librarianDashboardTableItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    height: 30px;
 }
