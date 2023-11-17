@@ -25,6 +25,10 @@ import RegisterMember from './pages/Member/RegisterMember/RegisterMember';
 import RegisterLibraryStaff from './pages/LibraryStaff/RegisterLibraryStaff/RegisterLibraryStaff';
 import RegisterLibrarian from './pages/Librarian/RegisterLibrarian/RegisterLibrarian';
 import FineManagement from './pages/Member/FineManagement/FineManagement';
+import Profile from './pages/common/Profile';
+import HelpAndSupport from './pages/common/HelpAndSupport';
+import SystemLogs from './pages/Admin/SystemLogs/SystemLogs';
+
 function App() {
   return (
     <div className="App">
@@ -53,6 +57,9 @@ function App() {
           <Route path='/registerLibraryStaff' element={<RegisterLibraryStaff />} />
           <Route path='/registerLibrarian' element={<RegisterLibrarian />} />
           <Route path='/fineManagement' element={<FineManagement />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/helpAndSupport' element={<HelpAndSupport />} />
+          <Route path='/systemLogs' element={<SystemLogs />} />
         </Routes>
 
       </Router>
