@@ -115,7 +115,7 @@ class Chart2 extends Component {
 			padding: '8px',
 			border: 'none',
 			fontSize: '16px',
-			backgroundColor: '#2eacd1',
+			backgroundColor: '#3a5a40',
 			color: 'white',
 			position: 'absolute',
 			top: '10px',
