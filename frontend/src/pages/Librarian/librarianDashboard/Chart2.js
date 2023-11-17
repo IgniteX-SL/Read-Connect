@@ -75,18 +75,18 @@ class Chart2 extends Component {
 				name: "Reserved Books",
 				type: "column",
 				dataPoints: [
-					{ x: new Date("1 Jan 2017"), y: 400 },
-					{ x: new Date("1 Feb 2017"), y: 450 },
-					{ x: new Date("1 Mar 2017"), y: 500 },
-					{ x: new Date("1 Apr 2017"), y: 475 },
-					{ x: new Date("1 May 2017"), y: 525 },
-					{ x: new Date("1 Jun 2017"), y: 300 },
-					{ x: new Date("1 Jul 2017"), y: 350 },
-					{ x: new Date("1 Aug 2017"), y: 400 },
-					{ x: new Date("1 Sep 2017"), y: 410 },
-					{ x: new Date("1 Oct 2017"), y: 370 },
-					{ x: new Date("1 Nov 2017"), y: 360 },
-					{ x: new Date("1 Dec 2017"), y: 330 }
+					{ x: new Date("1 Jan 2023"), y: 400 },
+					{ x: new Date("1 Feb 2023"), y: 450 },
+					{ x: new Date("1 Mar 2023"), y: 500 },
+					{ x: new Date("1 Apr 2023"), y: 475 },
+					{ x: new Date("1 May 2023"), y: 525 },
+					{ x: new Date("1 Jun 2023"), y: 300 },
+					{ x: new Date("1 Jul 2023"), y: 350 },
+					{ x: new Date("1 Aug 2023"), y: 400 },
+					{ x: new Date("1 Sep 2023"), y: 410 },
+					{ x: new Date("1 Oct 2023"), y: 370 },
+					{ x: new Date("1 Nov 2023"), y: 360 },
+					{ x: new Date("1 Dec 2023"), y: 330 }
 				]
 			}],
 			"Not Reserved Books": [{
@@ -94,6 +94,7 @@ class Chart2 extends Component {
 				color: "#a3b18a",
 				name: "Not Reserved Books",
 				type: "column",
+				fontSize: '16px',
 				dataPoints: [
 					{ x: new Date("1 Jan 2017"), y: 4600 },
 					{ x: new Date("1 Feb 2017"), y: 4550 },
