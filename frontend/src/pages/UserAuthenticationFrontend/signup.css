@@ -4,8 +4,7 @@
 }
 .signUpPage{
     display: flex;
-    height: 780px;
-    padding-top: 35px;
+    height: 728px;
     background: linear-gradient(to bottom, #dad7cd, #dad7cd);
 }
 .signUpPageImage{
@@ -17,9 +16,17 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.signUpRight{
+    width: 100%;
+}
 .sideBarContainor{
     width: 300px;
     height: 100vh;
+}
+.signUpPageHolder{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
 }
 .signUpPageLeft{
     width: 50%;
@@ -35,7 +42,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.welcomeHolder{
+    width: 100%;
+    margin-left: -5px;
+}
 .signUpBack{    
     display: flex;
     align-items: center;

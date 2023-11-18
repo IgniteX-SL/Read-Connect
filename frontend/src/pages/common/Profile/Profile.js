@@ -2,7 +2,7 @@ import React from "react";
 import "./profile.css";
 import SideBar from "../../../components/SideBar/SideBar";
 import Welcome from "../../../components/Welcome/Welcome";
-import profileImage from"./profileImage.jpg";
+import profileImage from "./profileImage.jpg";
 import { useAuthContext } from '../../../hooks/useAuthContext';
 import { Link } from "react-router-dom";
 function Profile() {
@@ -21,6 +21,10 @@ function Profile() {
                             <div class="profileImageContainer"><img class="profileImage" src={profileImage} alt=""></img></div>
                         </div>
                         <div class="profileDetailArea">
+                            <div class="profileDetailRow">
+                                <div class="profileDetailHeader">Role : </div>
+                                <div class="profileDetailCell">{user.role}</div>
+                            </div>
                             <div class="profileDetailRow">
                                 <div class="profileDetailHeader">Name</div>
                                 <div class="profileDetailCell">{user.name}</div>
