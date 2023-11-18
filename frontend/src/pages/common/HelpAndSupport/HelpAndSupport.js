@@ -1,9 +1,9 @@
 import React from "react";
-import "./profile.css";
-import SideBar from "../../components/SideBar/SideBar";
-import Welcome from "../../components/Welcome/Welcome";
+import "./helpAndSupport.css";
+import SideBar from "../../../components/SideBar/SideBar";
+import Welcome from "../../../components/Welcome/Welcome";
 import { Link } from "react-router-dom";
-function Profile() {
+function HelpAndSupport() {
     return (
         <div className="libraryStaffManagementContainor">
             <div className="leftLibraryStaffManagementContainor">
@@ -12,7 +12,7 @@ function Profile() {
             <div className="rightLibraryStaffManagementContainor">
                 <Welcome />
                 <div className="libraryStaffManagementtileContainor">
-                    <h6><b>Profile</b></h6>
+                    <h6><b>Help And Support</b></h6>
                     
 
                 </div>
@@ -20,4 +20,4 @@ function Profile() {
         </div>
     );
 }
-export default Profile;
+export default HelpAndSupport;

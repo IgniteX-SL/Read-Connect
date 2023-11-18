@@ -7,7 +7,7 @@ import { useSignup } from '../../hooks/useSignup';
 import SideBar from '../../components/SideBar/SideBar';
 
 
-export default function Signup() {
+export default function CreateMemberAccount() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')

@@ -6,6 +6,7 @@ import Login from './pages/UserAuthenticationFrontend/loginProfile';
 import CreateLibrarian from './pages/UserAuthenticationFrontend/createLibrarianAccount';
 import CreateLibraryStaff from './pages/UserAuthenticationFrontend/createLibraryStaffAccount';
 import CreateMember from './pages/UserAuthenticationFrontend/createMemberAccount';
+import CreateAdmin from './pages/UserAuthenticationFrontend/createAdminAccount';
 import ChangePassword from './pages/UserAuthenticationFrontend/changePassword';
 import Table from './components/Table/Table';
 import Home from './pages/Static/Home/Home';
@@ -20,13 +21,14 @@ import BookReservation from './pages/Books/BookReservation/BookReservation';
 import BooksAdd from './pages/Books/BooksAdd/BooksAdd';
 import MemberManagement from './pages/Member/MemberManagement/MemberManagement';
 import LibraryStaffManagement from './pages/LibraryStaff/LibraryStaffManagement/LibraryStaffManagement';
+import LibrarianManagement from './pages/Librarian/LibrarianManagement/LibrarianManagement';
 import LibrarianDashboard from './pages/Librarian/librarianDashboard/LibrarianDashboard';
 import RegisterMember from './pages/Member/RegisterMember/RegisterMember';
 import RegisterLibraryStaff from './pages/LibraryStaff/RegisterLibraryStaff/RegisterLibraryStaff';
 import RegisterLibrarian from './pages/Librarian/RegisterLibrarian/RegisterLibrarian';
 import FineManagement from './pages/Member/FineManagement/FineManagement';
-import Profile from './pages/common/Profile';
-import HelpAndSupport from './pages/common/HelpAndSupport';
+import Profile from './pages/common/Profile/Profile';
+import HelpAndSupport from './pages/common/HelpAndSupport/HelpAndSupport';
 import SystemLogs from './pages/Admin/SystemLogs/SystemLogs';
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
           <Route path="/createLibrarian" element={<CreateLibrarian />} />
           <Route path="/createLibraryStaff" element={<CreateLibraryStaff />} />
           <Route path="/createMember" element={<CreateMember />} />
+          <Route path="/createAdmin" element={<CreateAdmin />} />
           <Route path="/login" element={<Login />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/table" element={<Table />} />
@@ -52,6 +55,7 @@ function App() {
           <Route path="/bookReservation" element={<BookReservation />} />
           <Route path="/memberManagement" element={<MemberManagement />} />
           <Route path="/libraryStaffManagement" element={<LibraryStaffManagement />} /> 
+          <Route path="/librarianManagement" element={<LibrarianManagement />} />
           <Route path="/librarianDashboard" element={<LibrarianDashboard />} /> 
           <Route path='/registerMembers' element={<RegisterMember />} />
           <Route path='/registerLibraryStaff' element={<RegisterLibraryStaff />} />

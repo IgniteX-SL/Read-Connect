@@ -8,14 +8,14 @@ import SideBar from '../../components/SideBar/SideBar';
 
 
 
-export default function CreateLibrarianAccount() {
+export default function CreateAdminAccount() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')
   const { signup, error, isLoading } = useSignup()
 
   const handleSubmit = async (e) => {
-    const role = "librarian";
+    const role = "admin";
     e.preventDefault()
     await signup({ email, password ,name, role});
     clearForm();
@@ -39,7 +39,7 @@ export default function CreateLibrarianAccount() {
             <div className="signUpS">
               <img src={LoginProfile} className='signUpProfileImage'></img>
               <form onSubmit={handleSubmit}>
-                <h3>Create Librarian Account</h3>
+                <h3>Create Admin Account</h3>
                 <label>Email</label>
                 <input
                   type="email"

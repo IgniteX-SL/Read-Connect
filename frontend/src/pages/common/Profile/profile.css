@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.profileContainor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.leftProfileContainor{
+    width: 16%;
+    height: 100vh;  
+}
+.rightProfileContainor{
+    width: 84%;
+    height: 100vh;
+}
+.profileTileContainor{
+    width: 100%;
+    height: 89%;
+    padding-left: 50px;
+    padding-top: 5px;
+    background-color: #dad7cd;
+}
+.profileTileContainor h6{
+    color: black;
+}
+
+.profileImage {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    /* margin-left: 20px; */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 5px solid #588157
+}
+.profileArea{
+    width: 96%;
+}
+.profileArea,
+.notificationDetailArea {
+    display: flex;
+    height: 45%;
+}
+
+.profileDetailArea {
+    width: 50%;
+    padding-top: 70px;
+}
+
+.profileImageArea {
+    width: 30%;
+    margin: 10px;
+    padding: 4%;
+    margin-top: 0px;
+    padding-left: 15px;
+}
+
+.profileButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.profileButton {
+    width: 150px;
+    height: 30px;
+    background-color: #588157;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: none;
+    margin-right: 10px;
+}
+
+.profileButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profileDetailRow {
+    display: flex;
+    margin-top: 2%;
+}
+
+.profileDetailCell {
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.profileDetailHeader {
+    width: 30%;
+}
+
+.changePasswordButton input {
+    width: 200px;
+}
