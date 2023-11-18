@@ -9,7 +9,7 @@ function SideBar() {
   const iconStyle = { filter: 'invert(1)' };
   const { user } = useAuthContext();
   const { logout } = useLogout();
-  
+
   const handleClick = () => {
     logout();
   };
@@ -113,7 +113,34 @@ function SideBar() {
                 </Link>
               </li>
             )}
-
+            {user.role === 'admin' && (
+              <div>
+                <li>
+                  <Link to="/createAdmin" class="nav-link">
+                    <span className="icon">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAadJREFUSEvFluFNAzEMhd1NYJLCJMAkhUmASYBJYJNW3yk+OW4S+8JJtdQfvUv88p7tdznIjeJwI1yZAb4TkQcR+SiH5j/xt4VEFpjkzyJyLKDfIvJYgL7Ms59yoPAQGeBXETk5Ni1gu+QtOsAIGJbvhY1XMQJmPWteeiXoAVNDJOxFBlj33rfAe8Batz2Am8xbwDQREo9iC2PyUHN6ZQ0PTF1/E2OxFZiUleQeGKYwjmIGuGLtgWGrhrCn1NrlOvtXznWOqJb3M4wruS3jaITsmSww5cmopE3G3opxppsV3AInRaqXWcYta+wlxYupV+jJvQSzUpOPrxOWSKDWU4L6p37V/gMMW4CRnRrjdlGtUemqxlnz6DVZVCoOioks4ec48uiWmrDWS8HIB4YGMsPaMhmN5NAyYZS1TcveNlprv33flJqH2UaxwHa8/P6qtr0a6/MZya2paKPZzq/6I7r6ZEbEJlzHpYwXDbWMj4/osqe3S3/ZGznaOjIjQ4mArfSAj77VyIozVTeNjGUmHG9pPP1pIwLIrynpXsCZw6XWZKVOJduy6ALtz2cfpJtlSQAAAABJRU5ErkJggg==" style={iconStyle} />
+                    </span>
+                    Create Admin
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/libraryStaffManagement" class="nav-link">
+                    <span className="icon">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAadJREFUSEvFluFNAzEMhd1NYJLCJMAkhUmASYBJYJNW3yk+OW4S+8JJtdQfvUv88p7tdznIjeJwI1yZAb4TkQcR+SiH5j/xt4VEFpjkzyJyLKDfIvJYgL7Ms59yoPAQGeBXETk5Ni1gu+QtOsAIGJbvhY1XMQJmPWteeiXoAVNDJOxFBlj33rfAe8Batz2Am8xbwDQREo9iC2PyUHN6ZQ0PTF1/E2OxFZiUleQeGKYwjmIGuGLtgWGrhrCn1NrlOvtXznWOqJb3M4wruS3jaITsmSww5cmopE3G3opxppsV3AInRaqXWcYta+wlxYupV+jJvQSzUpOPrxOWSKDWU4L6p37V/gMMW4CRnRrjdlGtUemqxlnz6DVZVCoOioks4ec48uiWmrDWS8HIB4YGMsPaMhmN5NAyYZS1TcveNlprv33flJqH2UaxwHa8/P6qtr0a6/MZya2paKPZzq/6I7r6ZEbEJlzHpYwXDbWMj4/osqe3S3/ZGznaOjIjQ4mArfSAj77VyIozVTeNjGUmHG9pPP1pIwLIrynpXsCZw6XWZKVOJduy6ALtz2cfpJtlSQAAAABJRU5ErkJggg==" style={iconStyle} />
+                    </span>
+                    Library Staff
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/librarianManagement" class="nav-link">
+                    <span className="icon">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAadJREFUSEvFluFNAzEMhd1NYJLCJMAkhUmASYBJYJNW3yk+OW4S+8JJtdQfvUv88p7tdznIjeJwI1yZAb4TkQcR+SiH5j/xt4VEFpjkzyJyLKDfIvJYgL7Ms59yoPAQGeBXETk5Ni1gu+QtOsAIGJbvhY1XMQJmPWteeiXoAVNDJOxFBlj33rfAe8Batz2Am8xbwDQREo9iC2PyUHN6ZQ0PTF1/E2OxFZiUleQeGKYwjmIGuGLtgWGrhrCn1NrlOvtXznWOqJb3M4wruS3jaITsmSww5cmopE3G3opxppsV3AInRaqXWcYta+wlxYupV+jJvQSzUpOPrxOWSKDWU4L6p37V/gMMW4CRnRrjdlGtUemqxlnz6DVZVCoOioks4ec48uiWmrDWS8HIB4YGMsPaMhmN5NAyYZS1TcveNlprv33flJqH2UaxwHa8/P6qtr0a6/MZya2paKPZzq/6I7r6ZEbEJlzHpYwXDbWMj4/osqe3S3/ZGznaOjIjQ4mArfSAj77VyIozVTeNjGUmHG9pPP1pIwLIrynpXsCZw6XWZKVOJduy6ALtz2cfpJtlSQAAAABJRU5ErkJggg==" style={iconStyle} />
+                    </span>
+                    Librarian
+                  </Link>
+                </li>
+              </div>
+            )}
             <li>
               <Link to="/helpAndSupport" class="nav-link">
                 <span class="icon">

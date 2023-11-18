@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useSignup } from '../../hooks/useSignup';
 import SideBar from '../../components/SideBar/SideBar';
 
-export default function Signup() {
+export default function CreateLibraryStaffAccount() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')

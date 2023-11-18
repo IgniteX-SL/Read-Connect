@@ -2,49 +2,49 @@
     margin: 0;
     padding: 0;
 }
-.libraryStaffManagementContainor{
+.librarianManagementContainor{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
 }
-.leftLibraryStaffManagementContainor{
+.leftLibrarianManagementContainor{
     width: 16%;
     height: 100vh;  
 }
-.rightLibraryStaffManagementContainor{
+.rightLibrarianManagementContainor{
     width: 84%;
     height: 100vh;
 }
-.libraryStaffManagementtileContainor{
+.librarianManagementtileContainor{
     width: 100%;
     height: 89%;
     padding-left: 50px;
     padding-top: 5px;
     background-color: #dad7cd;
 }
-.libraryStaffManagementtileContainor h6{
+.librarianManagementtileContainor h6{
     color: black;
 }
-.libraryStaffManagementTileRow{
+.librarianManagementTileRow{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 28%;
 }
-.libraryStaffManagementTile{
+.librarianManagementTile{
     width:20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.libraryStaffManagementTile:hover{
+.librarianManagementTile:hover{
     cursor: pointer;
 }
-.textLibraryStaffContainor{
+.textLibrarianContainor{
     padding-top: 55px;
     text-align: center;
     width: 70%;
@@ -56,7 +56,7 @@
     font-size: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.textLibraryStaffContainor:hover{
+.textLibrarianContainor:hover{
     width: 72%;
     height: 77%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -65,7 +65,7 @@
     /* color: #dad7cd; */
     cursor: pointer;
 }
-.textLibraryStaffContainor img{
+.textLibrarianContainor img{
     width: 40%;
     height: 80%;
     margin-top: -35px;
