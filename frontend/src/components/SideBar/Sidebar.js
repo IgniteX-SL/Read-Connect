@@ -93,14 +93,6 @@ function SideBar() {
                     Pay Fines
                   </Link>
                 </li>
-                <li>
-                  <Link to="/systemLogs" class="nav-link">
-                    <span class="icon">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAU9JREFUSEvlluFNxDAMhd9twk0CbMJNAkwCTHIwCYyCPkSqXOrYTnpShbDUX039xS/PTg/aKQ47cfUnwTeSeN5nVBupGMiDpFtJdxXsS1J5PiS9ZjaSARfgYyahpGdJT9HaCExl5yiJ8R4FTt4xeOBZaL2P+x7cA3/+mmei4OUTKj9aCXpg5K0NtAWO2ZD9IixwJDGJWIPpsrGS3ALTMi9ORlwLnHXTTrfA0dnW7ULbZOAMGapewgJH7fPWDAkk5xtP+pXJoj7OnmEGfnHO1wTjC68TaCsq/4lrSB11gcnqgb2d1+aKOqBAV71sgSOnFjDSAs5ECoxRaKlekIQ1I5MtNUAA7jIyAWfaIyPx8CVR4J7kGfDUtUhizhETjVwIfLfpR6BUNPrrY16DrTwjk4sNcCG0jm5/9Jbp5J3FCLjNwwZSEGsDW8AZc3XX/D/wN0aYQx/Hk1iyAAAAAElFTkSuQmCC" style={iconStyle} />
-                    </span>
-                    System Logs
-                  </Link>
-                </li>
               </div>
             )}
             {user.role === 'librarian' && (
@@ -116,11 +108,27 @@ function SideBar() {
             {user.role === 'admin' && (
               <div>
                 <li>
+                  <Link to="/adminDashboard" class="nav-link">
+                    <span className="icon">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANZJREFUSEvtV8ENgzAQM5u0m8AmZbKyCd2EblJkRKsQaHxFJyWVchKv+DC+XJyjQaZoMvGiKOILAD6peESLKifGHyp+Gco/AOhX3B3ATeQ8AVxDTFzqFsBoIKaCbsURzzwVxH+UV+Ja6m8N81fNxePEY7WER1fTPNgbKdNhhTYm4kGszu/hejHELNdkkBBapuUISsskpzJ8YsL9crFMg9gdxI04m+Jfr0UXxZZGee9xvRZVY9ZBYFOhM87FQY8Dn4rk7XTGuSw5pvFWfbnLelF/Ei6K1EtmBBlUHyr3vLcAAAAASUVORK5CYII=" style={iconStyle} />
+                    </span>
+                    Dashboard
+                  </Link>
+                </li>
+                <li>
                   <Link to="/createAdmin" class="nav-link">
                     <span className="icon">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAadJREFUSEvFluFNAzEMhd1NYJLCJMAkhUmASYBJYJNW3yk+OW4S+8JJtdQfvUv88p7tdznIjeJwI1yZAb4TkQcR+SiH5j/xt4VEFpjkzyJyLKDfIvJYgL7Ms59yoPAQGeBXETk5Ni1gu+QtOsAIGJbvhY1XMQJmPWteeiXoAVNDJOxFBlj33rfAe8Batz2Am8xbwDQREo9iC2PyUHN6ZQ0PTF1/E2OxFZiUleQeGKYwjmIGuGLtgWGrhrCn1NrlOvtXznWOqJb3M4wruS3jaITsmSww5cmopE3G3opxppsV3AInRaqXWcYta+wlxYupV+jJvQSzUpOPrxOWSKDWU4L6p37V/gMMW4CRnRrjdlGtUemqxlnz6DVZVCoOioks4ec48uiWmrDWS8HIB4YGMsPaMhmN5NAyYZS1TcveNlprv33flJqH2UaxwHa8/P6qtr0a6/MZya2paKPZzq/6I7r6ZEbEJlzHpYwXDbWMj4/osqe3S3/ZGznaOjIjQ4mArfSAj77VyIozVTeNjGUmHG9pPP1pIwLIrynpXsCZw6XWZKVOJduy6ALtz2cfpJtlSQAAAABJRU5ErkJggg==" style={iconStyle} />
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATtJREFUSEvtlusNwjAMhK+TAJMAkwCTAJMAk8AmsAnoUF21rvMwTamEsITojyRffInPqTBRVBNx8Ql4DmAL4AHgVv+79+8FXwGsWhTCjwDOXrIHfACwNwCEr72Ze8B3AJTZCoIpe3ZYYDnDpVqlLbEGMGv+JPh9iW3GAutzzM7CGBhUwgI/h5DUXMpPeC80mHIy41LxBzdKji21GEzP4SywmESsfLx3oOdwMQMpfdE6DpdyrpI1TZWauk6BT3Un8kobGr+ThpICl854IdZqgXm29OuNaoFDs+6YydjlxM1Kw2Bb/Vod/4ZlinSzjBtfLGO9UMpk+BZjCSXbIm8zSyj0xGnqsLVSrOSs8e+pVjnx6Uq/tuDWiyIE5pGwbs0IGQihFth60FnNRL/BklIPNYns+SnLzF7IO3Ay8AudWkYfRKVizwAAAABJRU5ErkJggg==" style={iconStyle} />
                     </span>
                     Create Admin
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/librarianManagement" class="nav-link">
+                    <span className="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfJJREFUSEvFljtOBDEMhv9tuQAtnAQQN+AEIDo6agqgQeIMFDw6Ck6AxKPjFiAuAvpQHHkyyXhmWZhIq13NZP3Zvx3HC820FjNxtQx4Q9K2JL4/kuN8v0wJYiwYyL6k0wHjBr8d40QEHgMsfTEHzp0iPX+HwECfk6T2R+R8TRHx28u+lVJge3FgpwVvgTH47tzEyEFFQhz7lPQm6UHSWuFsE94CY5ACYiHZWSO3X8XzC0lXRT1U4TXwdfpjBOV9CebZk6Q9SceuGG+SYtnPEkyURMvC083giNTABj+URBDY7KWqBPtoKYzobLbAwE12qxVsYfNnlWA2UVg9aUbmuNy2LuneRZ0V9GAv81BBeeNDEbPvSBJwazxZRQ+mMyE1i6ND1NGKwHfJptVNttsCI4n14SF4BCavwCzPWUkP5qyaJKsEI685WI3Y53hMRbfOsVcIqZG5l8L/Lq6spAf7/tw5cwNJjnJMRV+6Tph55Tm2Ht26FEofogby6DphpzeUYB/1b1vmboLaZdOpm+iSiDrYyi4JpPQDAFEzyky5Fk/SfjuaVeX+ehAgkOrRnDL64Ll9bPwxhchjbfSpTS3V26ms2mWGPWyEl0w0ZZojOEDOuEhay+qBggz7/FiwdwAn+JjMJn80NHQcngqOrsnR72cDfwMcUJMfMR1tJQAAAABJRU5ErkJggg==" style={iconStyle}/>
+                    </span>
+                    Librarian
                   </Link>
                 </li>
                 <li>
@@ -132,11 +140,19 @@ function SideBar() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/librarianManagement" class="nav-link">
-                    <span className="icon">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAadJREFUSEvFluFNAzEMhd1NYJLCJMAkhUmASYBJYJNW3yk+OW4S+8JJtdQfvUv88p7tdznIjeJwI1yZAb4TkQcR+SiH5j/xt4VEFpjkzyJyLKDfIvJYgL7Ms59yoPAQGeBXETk5Ni1gu+QtOsAIGJbvhY1XMQJmPWteeiXoAVNDJOxFBlj33rfAe8Batz2Am8xbwDQREo9iC2PyUHN6ZQ0PTF1/E2OxFZiUleQeGKYwjmIGuGLtgWGrhrCn1NrlOvtXznWOqJb3M4wruS3jaITsmSww5cmopE3G3opxppsV3AInRaqXWcYta+wlxYupV+jJvQSzUpOPrxOWSKDWU4L6p37V/gMMW4CRnRrjdlGtUemqxlnz6DVZVCoOioks4ec48uiWmrDWS8HIB4YGMsPaMhmN5NAyYZS1TcveNlprv33flJqH2UaxwHa8/P6qtr0a6/MZya2paKPZzq/6I7r6ZEbEJlzHpYwXDbWMj4/osqe3S3/ZGznaOjIjQ4mArfSAj77VyIozVTeNjGUmHG9pPP1pIwLIrynpXsCZw6XWZKVOJduy6ALtz2cfpJtlSQAAAABJRU5ErkJggg==" style={iconStyle} />
+                  <Link to="/systemLogs" class="nav-link">
+                    <span class="icon">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAU9JREFUSEvlluFNxDAMhd9twk0CbMJNAkwCTHIwCYyCPkSqXOrYTnpShbDUX039xS/PTg/aKQ47cfUnwTeSeN5nVBupGMiDpFtJdxXsS1J5PiS9ZjaSARfgYyahpGdJT9HaCExl5yiJ8R4FTt4xeOBZaL2P+x7cA3/+mmei4OUTKj9aCXpg5K0NtAWO2ZD9IixwJDGJWIPpsrGS3ALTMi9ORlwLnHXTTrfA0dnW7ULbZOAMGapewgJH7fPWDAkk5xtP+pXJoj7OnmEGfnHO1wTjC68TaCsq/4lrSB11gcnqgb2d1+aKOqBAV71sgSOnFjDSAs5ECoxRaKlekIQ1I5MtNUAA7jIyAWfaIyPx8CVR4J7kGfDUtUhizhETjVwIfLfpR6BUNPrrY16DrTwjk4sNcCG0jm5/9Jbp5J3FCLjNwwZSEGsDW8AZc3XX/D/wN0aYQx/Hk1iyAAAAAElFTkSuQmCC" style={iconStyle} />
                     </span>
-                    Librarian
+                    System Logs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/initializeApp" class="nav-link">
+                    <span class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUtJREFUSEvtlu0RwUAQhi+d0AmVoBJUgkpQCZ0wj7k1b9ZeJGHEj9yMMS67+37s3kWVBlrVQLhpBP6Z86PVf2X1JLO5tmRFPJ9TU3ypxyTuUkozSQb4kFLaFAqyv3bx/FxFJCJgX8Dj7HMx3T86kvosJOyBUUgRliWYxahR26c5TkE1h1h1YK7KPfBFitcC8z6FlhkQ5RS3dtBTcnTxHGJ8Q8rI1q5MVUtfKOxX1HtiIlDLhSjzwnqKUcUaALPSFKsKa8lTSYEsTtqgPQQpsA5VV2CUNB23WxOwWh1NromJJrjWP6c6dFIV+0HwKnx/6etZJjciS47ZXBwuiEbHCQD2FzLxNkyeDMW32XZyWh8nwN9dIH6CAcdOBfEz9nJKvnVlGri6YhPf+sr0F4AVCE5KuPXRS6ItSO+48R9Ib+u6Jo5Wd3Wsd/xgVt8BJGpWH4Fzy3oAAAAASUVORK5CYII=" style={iconStyle}/>
+                    </span>
+                    Initialize App
                   </Link>
                 </li>
               </div>
@@ -147,14 +163,6 @@ function SideBar() {
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZpJREFUSEvFluFNAzEMRt1JKJvAJJRJgEmgk8AmMAp6VXzy5ezYuaqq/5zUJnn2ZzvOQe5khztxZQ/4KCJPIsL3rznO92cmiCoYyElE3gaHK/xccSIDV4C9L+rAh1Fk4+8IDPS7STqjoq7FgecIHoGB/u6hdXtCeAQmUgooMg4klw9NkWztJnIP/NkKyYMCfHWKBzD7UMqzr7Zv+a8HcwDRRobnUduM0rNxuAePoqVK35tHtrWQXH/nG7UcDuP4xXowBRXJhcRI1qtioxkpxrpHD5zJDBTTm8umQ53KumFJlY0Y+ZB61mwk2Rnq4ErqbJPn0CpvrTBHrbXUiY14VBgV6Kgwdb8bcZbjHm5bqwJl/9Vgm9cZpajqyyi1UmcVaSPWOaxVXi3Ihdf3cXZHVwHptdmDq1Hbaq46u7puZ4eERjILToeE5ix7AOhYZP1L8lhYXZXRXa2/VyWv5NydaLd++niz251OfQR7HnucYUeoq0r2yrTSM2e5zyPTvFNIts+vAlsHUEFntj7qb/agrxTR1Jqq1FOHVhb/A4KjZB8cnggAAAAAAElFTkSuQmCC" style={iconStyle} />
                 </span>
                 Help & Support
-              </Link>
-            </li>
-            <li>
-              <Link to="/profile" class="nav-link">
-                <span class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAM1JREFUSEvtlcENwjAMRV+H4FyW4A6LVDAD3FkAdkAsAneWgDNDgCylUtXi1g6UgJRIvaSWX/z9ExckWkUiLrHgCVCFQx+Bu7eAGLBAL0AZYDdg5oXHgNfArlXhBth7qv4rcDKpRdHRzDX39MsQe27HaD1+GJJ5QjqcnwNrUm8B7d8VWCkymKXWZDz1gCX5wqq/9x5ncFPZLHWvz94xV31FpoB8X5G6CamdnsGj9DhLLYMjm+uj5lqGx0Jm7yFkfrU3OB29L9dgQmtAMvAT6rdHH6hhXoMAAAAASUVORK5CYII=" style={iconStyle} />
-                </span>
-                Profile
               </Link>
             </li>
             <li onClick={handleClick}>
