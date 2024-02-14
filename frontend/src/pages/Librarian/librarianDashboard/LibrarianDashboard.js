@@ -10,7 +10,7 @@ import { useAuthContext } from '../../../hooks/useAuthContext';
 //var CanvasJSReact = require('@canvasjs/react-charts');
 
 function LibrarianDashboard() {
-    const { user } = useAuthContext();
+    // const { user } = useAuthContext();
     return (
         <div className="librarianDashboardContainor">
             <div className="leftLibrarianDashboardContainor">
@@ -19,13 +19,13 @@ function LibrarianDashboard() {
             <div className="rightLibrarianDashboardContainor">
                 <Welcome />
                 <div className="bookLibrarianDashboardRightContainor">
-                    {user.role === 'librarian' ? (
+                    {/* {user.role === 'librarian' ? (
                         <h6><b>Librarian Dashboard</b></h6>
                     ) : (
                         user.role === 'libraryStaff' ? (
                             <h6><b>Library Staff Dashboard</b></h6>
                         ) : null
-                    )}
+                    )} */}
                     <div className="dashboardTilesRow">
                         <div className="dashboardTile">
                             100 Users Today
