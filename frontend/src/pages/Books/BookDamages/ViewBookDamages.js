@@ -4,7 +4,7 @@ import Welcome from "../../../components/Welcome/Welcome";
 import Button from "react-bootstrap/Button";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-function viewBookDamages() {
+function ViewBookDamages() {
   return (
     <div className="viewBookDamagesContainor">
       <div className="leftViewBookDamagesContainor">
@@ -32,4 +32,4 @@ function viewBookDamages() {
     </div>
   );
 }
-export default viewBookDamages;
+export default ViewBookDamages;
