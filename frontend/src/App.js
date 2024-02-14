@@ -30,6 +30,11 @@ import FineManagement from './pages/Member/FineManagement/FineManagement';
 import Profile from './pages/common/Profile/Profile';
 import HelpAndSupport from './pages/common/HelpAndSupport/HelpAndSupport';
 import SystemLogs from './pages/Admin/SystemLogs/SystemLogs';
+import ViewBorrowals from './pages/Books/BookBorrow/viewBorrowals';
+import ViewReturns from './pages/Books/BookReturn/ViewBookReturn';
+import ViewPurchaises from './pages/Books/BookPurchaiseAdd/viewPurchaises';
+import ViewReservation from './pages/Books/BookReservation/viewReservation';
+import ViewBookReplacement from './pages/Books/BookReplacement/viewBookReplacement';
 
 function App() {
   return (
@@ -64,6 +69,11 @@ function App() {
           <Route path='/profile' element={<Profile />} />
           <Route path='/helpAndSupport' element={<HelpAndSupport />} />
           <Route path='/systemLogs' element={<SystemLogs />} />
+          <Route path='/viewBorrowals' element={<ViewBorrowals />} />
+          <Route path='/viewReturns' element={<ViewReturns />} />
+          <Route path="/viewPurchaises" element={<ViewPurchaises />} />
+          <Route path="/viewReservation" element={<ViewReservation />} />
+          <Route path="/viewBookReplacement" element={<ViewBookReplacement />} />
         </Routes>
 
       </Router>

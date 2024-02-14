@@ -17,7 +17,7 @@
 .introImageWaveContainor{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #dad7cd, #a3b18a);
+    background: linear-gradient(to bottom, #dad7cd, #f5f5f5);
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
 }
 .introAndImageHolder{
@@ -58,7 +58,7 @@
 #intro {
     color: black;
     text-align: justify;
-    width: 100%;
+    width: 85%;
 }
 
 .intro h1{
@@ -75,19 +75,19 @@
 
 
 .intro {
-    width: 70%;
+    width: 60%;
     margin-right: 5%;
     /* text-shadow: 5px 5px 5px white; */
 }
 
 #buttonHome {
     /* margin-left: 260px; Remove this line or adjust for responsiveness */
-    background-color: #c1121f;
+    background-color: #344e41;
     border: none;
     color: white;
 }
 #buttonHome:hover {
-    background-color: #780000;
+    background-color: #344e41;
     color: white;
     border: none;
 }

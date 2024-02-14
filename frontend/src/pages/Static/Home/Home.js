@@ -3,8 +3,7 @@ import Button from 'react-bootstrap/Button'
 import './home.css'
 import { Link } from 'react-router-dom';
 import SideBar from '../../../components/SideBar/SideBar';
-import backgroundImg from './backgroundImage.png';
-import wave from './greenWave.png';
+import backgroundImg from './backgroundImage2.png';
 import { AuthContext } from '../../../context/AuthContext';
 import { useLogout } from '../../../hooks/useLogout';
 
@@ -46,9 +45,9 @@ export default function Home() {
               <img src={backgroundImg}></img>
             </div>
           </div>
-          <div className='waveContainor'>
+          {/* <div className='waveContainor'>
             <img src={wave}></img>
-          </div>
+          </div> */}
 
 
         </div>
