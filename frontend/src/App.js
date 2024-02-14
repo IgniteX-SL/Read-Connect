@@ -37,7 +37,7 @@ import ViewReservation from './pages/Books/BookReservation/viewReservation';
 import ViewBookReplacement from './pages/Books/BookReplacement/viewBookReplacement';
 import ViewBookDonations from './pages/Books/BookDonation/ViewDonations';
 import ViewBooks from "./pages/Books/BooksAdd/ViewBooks";
-import ViewBookDamages from "./pages/Books/BookDamages/viewBookDamages";
+import ViewBookDamages from "./pages/Books/BookDamages/ViewBookDamages";
 
 function App() {
   return (
