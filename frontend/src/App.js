@@ -35,6 +35,9 @@ import ViewReturns from './pages/Books/BookReturn/ViewBookReturn';
 import ViewPurchaises from './pages/Books/BookPurchaiseAdd/viewPurchaises';
 import ViewReservation from './pages/Books/BookReservation/viewReservation';
 import ViewBookReplacement from './pages/Books/BookReplacement/viewBookReplacement';
+import ViewBookDonations from './pages/Books/BookDonation/ViewDonations';
+import ViewBooks from "./pages/Books/BooksAdd/ViewBooks";
+import ViewBookDamages from "./pages/Books/BookDamages/ViewBookDamages";
 
 function App() {
   return (
@@ -74,6 +77,9 @@ function App() {
           <Route path="/viewPurchaises" element={<ViewPurchaises />} />
           <Route path="/viewReservation" element={<ViewReservation />} />
           <Route path="/viewBookReplacement" element={<ViewBookReplacement />} />
+          <Route path="/viewDonations" element={<ViewBookDonations />} />
+          <Route path="/viewBooks" element={<ViewBooks />} />
+          <Route path="/viewBookDamages" element={<ViewBookDamages />} />
         </Routes>
 
       </Router>
